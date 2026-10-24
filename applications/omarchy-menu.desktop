@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Omarchy Menu
+Name[fr]=Menu Omarchy
+Comment=Applications, apparence et outils Omarchy
+Exec=/usr/share/omarchy/bin/omarchy-menu summon root
+Icon=preferences-system
+Terminal=false
+Categories=Settings;System;

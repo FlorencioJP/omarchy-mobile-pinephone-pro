@@ -1,0 +1,6 @@
+__pycache__/
+state/
+cache/
+*.log
+*.img
+*.xz

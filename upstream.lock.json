@@ -1,0 +1,11 @@
+{
+  "omarchy": {
+    "repository": "https://github.com/omacom/omarchy",
+    "reviewed_commit": "f643adc38ad65c4900609c5c1b0b5c359fef147a",
+    "license": "MIT",
+    "installed_package": "4.0.6-1",
+    "replace_installed_runtime": false
+  },
+  "installed_hyprland": "0.56.2-7",
+  "installed_quickshell": "0.3.2.r7.g2b4501a-1"
+}
