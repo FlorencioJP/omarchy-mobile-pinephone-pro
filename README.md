@@ -27,7 +27,7 @@ This repository contains integration work tested on one device: console and keyb
 | Keyboard-to-phone charging | Unresolved: phone discharged while keyboard charged, under both Omarchy and Sailfish |
 | Bluetooth and mobile data | Support retained, not validated on hardware |
 | Suspend and battery life | Not validated |
-| eMMC installation | Copy completed, backups and package/boot-file checks passed, partition table unchanged; boot without SD still untested |
+| eMMC installation | Copy and package/boot checks passed, partition table unchanged, recovery archives copied to Mac and SHA-256 verified; boot without SD still untested |
 
 The physical microSD is 512 GB, but the tested root partition remains approximately 8 GiB. Storage expansion is not implemented here. A 512 GB card image must not be written wholesale to the smaller eMMC.
 
