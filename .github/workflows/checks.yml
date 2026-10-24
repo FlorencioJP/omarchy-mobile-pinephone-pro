@@ -18,7 +18,8 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bash -n install.sh configure-user.sh tests/user-configure.sh
+          bash -n install.sh configure-user.sh tests/user-configure.sh tests/terminal-smoke.sh
           python3 tests/download.py
           python3 tests/check_console.py
+          python3 tests/terminal-lock.py
           bash tests/user-configure.sh

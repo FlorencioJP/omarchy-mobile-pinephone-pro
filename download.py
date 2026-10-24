@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Télécharger le lot figé et vérifier ses empreintes et signatures, sans sudo."""
 from concurrent.futures import ThreadPoolExecutor
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -47,7 +48,11 @@ def fetch(package):
 
 
 if __name__ == "__main__":
-    packages = json.loads((ROOT / "packages.lock.json").read_text())["packages"]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--terminal", action="store_true", help="Télécharger le complément terminal")
+    args = parser.parse_args()
+    manifest = "terminal.packages.lock.json" if args.terminal else "packages.lock.json"
+    packages = json.loads((ROOT / manifest).read_text())["packages"]
     CACHE.mkdir(exist_ok=True)
     subprocess.run(["gpg", "--batch", "--yes", "--dearmor", "--output", str(KEYRING),
                     "/usr/share/pacman/keyrings/archlinuxarm.gpg"], check=True)

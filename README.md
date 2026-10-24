@@ -21,6 +21,7 @@ This repository contains integration work tested on one device: console and keyb
 | Wi-Fi | Connection confirmed by the device owner; resume/reconnection untested |
 | Omarchy menu and app catalogue | Opened and inspected using screenshots from the device |
 | Additional applications | 203 packages installed; Chromium, Nautilus and GNOME Text Editor windows inspected |
+| Terminal complement | 37 signed packages added; software smoke tests passed in SD chroot under Sailfish; graphical session after these additions untested |
 | Touchscreen accuracy | Not fully validated |
 | Keyboard-to-phone charging | Unresolved: phone discharged while keyboard charged, under both Omarchy and Sailfish |
 | Bluetooth and mobile data | Support retained, not validated on hardware |
@@ -72,6 +73,16 @@ The mirrors are live services: exact versions are pinned, but long-term archive 
 
 Backups and the install log are under `/var/lib/omarchy-ppp/desktop`; the original user configuration is saved as `shell.json.before-portage`. No passwords, private SSH keys or personal Wi-Fi configuration belong in this repository or a redistributable image.
 
+The optional terminal complement adds Neovim, tmux, bash completion, bat, eza, fd, fzf, lazygit, less, manual pages, ripgrep, rsync, starship, unzip, wget, zip, zoxide and the `xdg-terminal-exec` integration used by Omarchy. Its 37 packages are pinned in `terminal.packages.lock.json`, including declared licences: 30.7 MiB downloaded, 124.4 MiB installed. It refuses to replace installed packages with other versions and leaves kernel, bootloader and compositor packages unchanged.
+
+```sh
+python3 download.py --terminal
+sudo bash install.sh --terminal
+bash tests/terminal-smoke.sh
+```
+
+The actual installation added 37 packages to the existing 673, without replacing or removing any. Neovim, an isolated tmux session, fzf/ripgrep filtering and Foot command selection passed on the phone's CPU in an SD chroot while Sailfish remained booted. This is not validation of the additions in the DanctNIX graphical session. Logs and package inventories are under `/var/lib/omarchy-ppp/terminal`; the private configuration backup created during maintenance must not be published. Kernel, initramfs and boot-script hashes were unchanged. There are now 56 installed package matches or identified providers out of the 164 upstream requests; this remains an incomplete port.
+
 ## Keyboard shortcuts
 
 | Action | Shortcut |
@@ -96,6 +107,7 @@ On the tested unit the keyboard charged while the phone continued discharging, i
 ```sh
 python3 tests/download.py
 python3 tests/check_console.py
+python3 tests/terminal-lock.py
 bash tests/user-configure.sh
 bash -n install.sh configure-user.sh
 ```
