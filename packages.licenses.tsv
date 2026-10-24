@@ -1,0 +1,204 @@
+name	version	declared_license
+libva	2.24.1-1	MIT
+libxss	1.2.5-1	X11
+ttf-liberation	2.1.5-2	custom:OFL
+openh264	2.6.0-2	BSD-2-Clause
+minizip	1:1.3.2-4	Zlib
+libxslt	1.1.45-2	MIT
+chromium	153.0.8010.36-1	BSD-3-Clause
+exiv2	0.28.9-1	GPL-2.0-or-later
+gexiv2-common	0.16.2-2	GPL-2.0-or-later
+gexiv2	0.16.2-2	GPL-2.0-or-later
+gssdp	1.6.6-1	LGPL-2.1-or-later
+gupnp	1:1.6.10-1	LGPL-2.1-or-later
+gupnp-igd	1.6.0-2	LGPL-2.1-or-later
+libnice	0.1.24-1	MPL-1.1 OR LGPL-2.1-only
+vmaf	3.2.1-1	BSD-2-Clause-Patent
+gst-plugins-bad-libs	1.28.8-1	LGPL-2.1-or-later
+xdg-desktop-portal-gtk	1.15.3-2	LGPL-2.0-or-later
+gtk4	1:4.24.1-1	LGPL-2.1-or-later
+glycin-gtk4	2.2.3-1	MPL-2.0 OR LGPL-2.1-or-later
+gnome-autoar	0.5.2-1	LGPL-2.1-or-later
+gnome-desktop-4	1:51.0-1	GPL-2.0-or-later; LGPL-2.0-or-later
+libbluray	1.5.1-1	LGPL-2.1-only
+libcdio	2.4.0-1	GPL-3.0-or-later
+libcdio-paranoia	10.2+2.0.2-3	GPL-3.0-or-later
+libblockdev	3.5.0-2	LGPL-2.1-or-later
+volume_key	0.3.12-12	GPL2
+libblockdev-crypto	3.5.0-2	LGPL-2.1-or-later
+libbytesize	2.12-3	LGPL-2.1-or-later
+parted	3.8-1	GPL-3.0-or-later
+libblockdev-fs	3.5.0-2	LGPL-2.1-or-later
+mdadm	4.6-2	GPL-2.0-or-later
+libblockdev-mdraid	3.5.0-2	LGPL-2.1-or-later
+libblockdev-loop	3.5.0-2	LGPL-2.1-or-later
+libnvme	1.16.2-2	LGPL-2.1-only
+libblockdev-nvme	3.5.0-2	LGPL-2.1-or-later
+libblockdev-part	3.5.0-2	LGPL-2.1-or-later
+libatasmart	0.19-8	LGPL-2.1-or-later
+libblockdev-smart	3.5.0-2	LGPL-2.1-or-later
+libblockdev-swap	3.5.0-2	LGPL-2.1-or-later
+udisks2	2.11.2-1	GPL-2.0-or-later; LGPL-2.0-or-later
+gvfs	1.62.0-3	LGPL-2.0-only
+ministream	0.99.1-1	LGPL-2.1-only
+libadwaita	1:1.10.0-1	LGPL-2.1-or-later
+libportal	0.11.0-1	LGPL-3.0-only
+libportal-gtk4	0.11.0-1	LGPL-3.0-only
+exempi	2.6.6-3	BSD-3-Clause
+gsm	1.0.24-1	custom
+libunibreak	7.0-1	custom:zlib/libpng
+libass	0.17.5-1	BSD
+libraw1394	2.1.2-4	LGPL-2.1-only
+libavc1394	0.5.4-7	GPL-2.0-or-later AND LGPL-2.1-or-later
+libbs2b	3.1.0-11	MIT
+libdvdread	7.1.1-1	GPL-2.0-or-later
+libdvdnav	7.0.0-1	GPL-2.0-or-later
+libiec61883	1.2.0-9	LGPL
+libmodplug	0.8.9.0-7	LicenseRef-PublicDomain
+portaudio	1:19.7.0-4	MIT
+libopenmpt	0.8.9-1	BSD-3-Clause
+shaderc	2026.4-1	Apache-2.0
+libdovi	3.4.0-1	MIT
+xxhash	0.8.4-1	GPL2; BSD
+libplacebo	7.360.1-7	LGPL-2.1-or-later
+libsoxr	0.1.3-5	LGPL-2.1-only; LicenseRef-soxr
+libssh	0.12.2-1	LGPL-2.1-or-later
+libtheora	1.2.0-1	BSD-3-Clause
+libvdpau	1.5-4	MIT
+libvpx	1.17.0-1	custom:BSD
+ocl-icd	2.3.5-1	BSD-2-Clause
+opencore-amr	0.1.6-2	Apache
+openjpeg2	2.5.4-1	BSD-2-Clause; MIT
+libsamplerate	0.2.2-3	BSD
+rubberband	4.0.0-2	GPL-2.0-or-later
+hidapi	0.15.0-1	GPL3; BSD; custom
+sdl3	3.4.18-1	Zlib
+sdl2-compat	2.32.74-1	Zlib
+snappy	1.3.1-1	BSD-3-Clause
+libmd	1.3.0-1	BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND CC-PDM-1.0
+libbsd	0.12.2-2	custom
+sndio	1.10.0-1	ISC
+speexdsp	1.2.1-3	BSD-3-Clause
+speex	1.2.1-3	BSD-3-Clause
+srt	1.5.7-2	MPL-2.0
+zimg	3.0.6-2	WTFPL
+vapoursynth	80-1	LGPL-2.1-or-later; OFL-1.1
+vid.stab	1.1.2-1	GPL-2.0-or-later
+l-smash	2.14.5-4	custom
+x264	3:0.165.r3222.b35605a-2	GPL-2.0-only
+x265	4.3-1	GPL-2.0-or-later
+xvidcore	1.3.7-4	GPL-2.0-only
+ffmpeg	2:9.0.2-2	GPL-3.0-only
+gupnp-dlna	0.12.0-5	LGPL-2.1-or-later
+libcue	2.3.0-1	GPL2
+libexif	0.6.26-1	LGPL
+libgsf	1.14.60-1	LGPL-2.1-only
+libgxps	0.3.2-5	GPL2
+libiptcdata	1.0.5-5	LGPL-2.0-or-later
+libmms	0.6.4-6	LGPL-2.1-or-later
+libzen	0.4.41-3	Zlib
+tinyxml2	11.0.0-2	LicenseRef-zlib
+libxpm	3.5.20-1	MIT; X11-distribute-modifications-variant
+aom	3.15.2-1	BSD-3-Clause
+libyuv	r2921+644251f25-1	custom
+rav1e	0.8.1-3	BSD-2-Clause
+libavif	1.4.2-1	LicenseRef-libavif
+libde265	1.1.3-1	LGPL-3.0-or-later
+libheif	1.23.6-1	LGPL-3.0-or-later
+gd	2.3.3-9	custom
+jbig2dec	0.20-1	GPL3
+libpaper	2.2.8-1	LGPL-2.1-or-later; LicenseRef-Public-Domain; GPL-3.0-or-later; LGPL-2.0-or-later; FSFAP; MIT
+ijs	0.35-7	AGPL-3.0-or-later
+libidn	1.44-1	GPL3; LGPL
+poppler-data	0.4.12-2	GPL-2.0-only OR GPL-3.0-only; BSD-3-Clause
+ghostscript	10.08.0-1	AGPL-3.0-or-later
+netpbm	10.86.51-2	Artistic-1.0; GPL-2.0-only; LGPL-2.0-only; MIT
+gts	0.7.6.121130-5	LGPL-3.0-or-later
+gsfonts	20200910-6	AGPL-3.0-only WITH PS-or-PDF-font-exception-20170817
+graphviz	16.1.0-2	EPL
+libmediainfo	26.10-1	BSD-2-Clause
+osinfo-db	20260812-1	GPL-2.0-or-later
+libosinfo	1.12.0-3	GPL-2.0-or-later AND LGPL-2.1-or-later
+gpgmepp	2.2.0-1	LGPL-2.0-or-later
+poppler	26.10.0-1	GPL-2.0-only; GPL-3.0-or-later; LGPL-2.0-or-later; LGPL-2.1-or-later; MIT; HPND-sell-variant
+poppler-glib	26.10.0-1	GPL-2.0-only; GPL-3.0-or-later; LGPL-2.0-or-later; LGPL-2.1-or-later; MIT; HPND-sell-variant
+uchardet	0.0.8-4	MPL-1.1
+totem-pl-parser	3.26.7-1	LGPL-2.0-or-later
+localsearch	3.12.0-1	GPL-2.0-or-later
+xdg-user-dirs	0.20-1	GPL-2.0-or-later
+xdg-user-dirs-gtk	0.16-1	GPL-2.0-or-later
+libnautilus-extension	51.1-1	GPL-3.0-or-later
+nautilus	51.1-1	GPL-3.0-or-later
+editorconfig-core-c	0.12.11-1	BSD-3-Clause
+gtksourceview5	5.22.0-1	LGPL-2.1-or-later
+enchant	2.8.21-1	LGPL-2.1-or-later
+libspelling	0.4.10-2	LGPL-2.1-or-later
+gnome-text-editor	51.0-1	GPL-3.0-or-later
+djvulibre	3.5.30.1-1	GPL-2.0-or-later
+gspell	1.14.5-1	LGPL-2.1-or-later
+libhandy	1.8.3-3	LGPL-2.1-or-later
+libspectre	0.2.12-2	GPL-2.0-or-later
+libsynctex	2026.0-4	GPL-2.0-or-later
+evince	1:48.4-2	GPL-2.0-or-later
+glu	9.0.3-3	SGI-B-2.0; MIT
+libnsbmp	0.1.7-2	MIT
+libnsgif	1.0.0-2	MIT
+qoi	r350.4461cc3-1	MIT
+imv	5.0.1-2	MIT
+libsixel	1.10.5-1	MIT
+libxpresent	1.0.2-1	MIT
+luajit	2.1.1792588164+a4c0645-1	MIT
+mujs	1.3.10-1	ISC
+openal	1.25.2-2	LGPL-2.0-or-later
+mpv	1:0.41.0-6	GPL-2.0-or-later AND LGPL-2.1-or-later
+hunspell	1.7.5-1	LGPL-2.1-or-later OR GPL-2.0-or-later OR MPL-1.1
+librevenge	0.0.6-1	LGPL-2.1-or-later OR MPL-2.0; BSD-3-Clause
+libwpd	0.10.3-6	LGPL-2.1-or-later OR MPL-2.0
+libwps	0.4.14-4	LGPL-2.1-or-later OR MPL-2.0
+neon	0.37.1-1	LGPL-2.0-or-later
+raptor	2.0.16-9	Apache-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later
+rasqal	1:0.9.33-9	Apache-2.0 OR GPL-2.0-or-later OR LGPL-2.1-or-later
+redland	1:1.0.17-10	LGPL-2.1-or-later OR Apache-2.0
+hyphen	2.8.9-1	GPL-2.0-only OR LGPL-2.1-or-later OR MPL-1.1
+lpsolve	5.5.2.14-1	LGPL-2.1-or-later; GPL-2.0-or-later WITH Bison-exception-2.2; BSD-3-Clause
+libvisio	0.1.11-1	MPL-2.0
+liblangtag	0.6.8-1	LGPL-3.0-or-later; MPL-2.0
+libetonyek	0.1.13-3	MPL-2.0
+libodfgen	0.1.8-5	LGPL-2.1-or-later OR MPL-2.0
+libcdr	0.1.9-1	MPL-2.0; LicenseRef-libcdr-Public-Domain
+libmspub	0.1.5-1	MPL-2.0
+harfbuzz-icu	14.6.0-1	MIT
+clucene	2.3.3.4-17	Apache-2.0; LGPL-2.0-or-later
+libpagemaker	0.0.4-5	MPL-2.0
+libabw	0.1.4-1	MPL-2.0
+libmwaw	0.3.23-1	LGPL-2.1-or-later OR MPL-2.0
+libe-book	0.1.4-1	MPL-2.0
+libexttextcat	3.4.8-1	BSD-3-Clause
+boost-libs	1.92.0-1	BSL-1.0
+libixion	0.20.0-9	MPL-2.0
+liborcus	0.21.0-8	MPL-2.0
+libcmis	0.6.3-2	GPL-2.0-or-later; LGPL-2.1-or-later; MPL-1.1
+libtommath	1.3.0-2	Unlicense
+libzmf	0.0.2-20	MPL-2.0
+libatomic_ops	7.8.2-2	GPL2; MIT
+xmlsec	1.3.12-1	MIT
+libnumbertext	1.0.11-3	LGPL-3.0-or-later OR BSD-3-Clause; LGPL-3.0-or-later OR CC-BY-SA-3.0
+libfreehand	0.1.4-1	MPL-2.0
+libstaroffice	0.0.8-1	LGPL-2.1-or-later OR MPL-2.0
+libepubgen	0.1.1-6	MPL-2.0
+libqxp	0.0.3-1	MPL-2.0
+zint	2.16.0-2	GPL-3.0-or-later
+zxing-cpp	3.1.1-1	Apache-2.0
+argon2	20190702-7	Apache; custom:CC0
+libreoffice-fresh	26.8.1-2	MPL-2.0; LGPL-3.0-or-later
+libsigc++-3.0	3.8.1-1	LGPL-2.1-or-later
+glibmm-2.68	2.90.0-1	LGPL-2.1-or-later
+cairomm-1.16	1.18.1-1	LGPL-2.0-or-later
+pangomm-2.48	2.58.0-1	LGPL-2.1-or-later
+gtkmm-4.0	4.24.0-1	LGPL-2.1-or-later
+pavucontrol	1:6.2-2	GPL-2.0-or-later
+python-cairo	1.29.2-1	LGPL2.1; MPL
+blueman	2.4.6-2	GPL-3.0-or-later
+btop	1.4.7-1	Apache-2.0
+grim	1.5.0-2	MIT
+wl-clipboard	1:2.3.0-1	GPL-3.0-or-later

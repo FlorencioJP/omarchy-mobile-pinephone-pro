@@ -1,0 +1,1629 @@
+{
+  "architecture": "aarch64",
+  "packages": [
+    {
+      "name": "libva",
+      "version": "2.24.1-1",
+      "arch": "aarch64",
+      "size": 193448,
+      "sha256": "208f2b00046c22544855390ae9359ac59a13f375ab1d6d1e3f50ee875ae9db61",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libva-2.24.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libxss",
+      "version": "1.2.5-1",
+      "arch": "aarch64",
+      "size": 14148,
+      "sha256": "1ebc34a29420166cb25040bfbff5d6ff732eff92de9cf07fcd92835e7d68bb9c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libxss-1.2.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "ttf-liberation",
+      "version": "2.1.5-2",
+      "arch": "any",
+      "size": 1473856,
+      "sha256": "e52cad7ee841491bb8b3d795d85dd56e9d6dafe16fd51be6626cef6d8131f197",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ttf-liberation-2.1.5-2-any.pkg.tar.xz"
+    },
+    {
+      "name": "openh264",
+      "version": "2.6.0-2",
+      "arch": "aarch64",
+      "size": 434672,
+      "sha256": "b7b8580d7411df2b7dd209fe269fc6631dee413415570f71aae8248d410f3447",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/openh264-2.6.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "minizip",
+      "version": "1:1.3.2-4",
+      "arch": "aarch64",
+      "size": 29844,
+      "sha256": "d4407d34a95348f5c019568b9d7db691193ec2a26fede8a2b30548a9b7a7776f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/core/minizip-1:1.3.2-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libxslt",
+      "version": "1.1.45-2",
+      "arch": "aarch64",
+      "size": 189964,
+      "sha256": "dd508d0060063ed5d833001a125d6b427c8a623d669758c44ac10cc84a92392f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libxslt-1.1.45-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "chromium",
+      "version": "153.0.8010.36-1",
+      "arch": "aarch64",
+      "size": 125597632,
+      "sha256": "9ce0132a90ab76641e79a8fc07207fde472daab51a1a2702e982f96a35dcf228",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/chromium-153.0.8010.36-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "exiv2",
+      "version": "0.28.9-1",
+      "arch": "aarch64",
+      "size": 2777400,
+      "sha256": "494885f4fb39cd2ddc1cfbf2c6d2a4bb7f3b42ad2209a9838e96d6df86f999bd",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/exiv2-0.28.9-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gexiv2-common",
+      "version": "0.16.2-2",
+      "arch": "aarch64",
+      "size": 6744,
+      "sha256": "396ca7df9e51f77ecf3f9d146308679c1acea7554b0ed585e2576e1209037c16",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gexiv2-common-0.16.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gexiv2",
+      "version": "0.16.2-2",
+      "arch": "aarch64",
+      "size": 86768,
+      "sha256": "4bfe88b6bbc5ac7e2d656fc1686b42a8b71e043846c37626ad2adb31a4cda551",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gexiv2-0.16.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gssdp",
+      "version": "1.6.6-1",
+      "arch": "aarch64",
+      "size": 55036,
+      "sha256": "6b4eaa0f2c31b5901b14b306bb4607842dbc3e2c9d5658ad719a1001b8bc5216",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gssdp-1.6.6-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gupnp",
+      "version": "1:1.6.10-1",
+      "arch": "aarch64",
+      "size": 121972,
+      "sha256": "38e6d7fdc0882f8b08e2d2e15c9e686607bdde6e01d48c54c7bd191a31f60ebf",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gupnp-1:1.6.10-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gupnp-igd",
+      "version": "1.6.0-2",
+      "arch": "aarch64",
+      "size": 27772,
+      "sha256": "47ada079f0ae6043f028ed6bf225ab26f085a40e06c6367a78580f058ea6e61b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gupnp-igd-1.6.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnice",
+      "version": "0.1.24-1",
+      "arch": "aarch64",
+      "size": 301848,
+      "sha256": "b6c6565ddb510373b211b62ae6c773c7608d39c4d799416c38a45e6a1549c61d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnice-0.1.24-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "vmaf",
+      "version": "3.2.1-1",
+      "arch": "aarch64",
+      "size": 378412,
+      "sha256": "5103e65332731cb568fd163b2d9fa074ebe2e821507c044e61048385a9a27c66",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/vmaf-3.2.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gst-plugins-bad-libs",
+      "version": "1.28.8-1",
+      "arch": "aarch64",
+      "size": 2720860,
+      "sha256": "9db399b8bec60e6a80367e45db11b31294714eca3383c3bf2d6a4420bc099747",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gst-plugins-bad-libs-1.28.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xdg-desktop-portal-gtk",
+      "version": "1.15.3-2",
+      "arch": "aarch64",
+      "size": 116928,
+      "sha256": "5a0ceadd58044b892142bd01a7417759585839b8e438b5ac76c8b784aca4cffd",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xdg-desktop-portal-gtk-1.15.3-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gtk4",
+      "version": "1:4.24.1-1",
+      "arch": "aarch64",
+      "size": 10656560,
+      "sha256": "a9c34b926a251f4d610ede9bd4f38d61a2097358ba477a743ff72a882f5278d2",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gtk4-1:4.24.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "glycin-gtk4",
+      "version": "2.2.3-1",
+      "arch": "aarch64",
+      "size": 111000,
+      "sha256": "3396ba510a7667ffa5928ee9ed607231fad36ef492636b8db5337417a4f30613",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/glycin-gtk4-2.2.3-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gnome-autoar",
+      "version": "0.5.2-1",
+      "arch": "aarch64",
+      "size": 42032,
+      "sha256": "89eda1fcb6f72eb749c12c747af893d1a728f1e3b2552321b6ce26f927a843a9",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gnome-autoar-0.5.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gnome-desktop-4",
+      "version": "1:51.0-1",
+      "arch": "aarch64",
+      "size": 101504,
+      "sha256": "9cbc06ec322a27bc89c4709331428683a2263406cbe0e0f28a583dfb8fd2a920",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gnome-desktop-4-1:51.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libbluray",
+      "version": "1.5.1-1",
+      "arch": "aarch64",
+      "size": 902920,
+      "sha256": "5efb15983210a0b1d538b55c076a771d7b45262f3832f30956b50a6d35971003",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libbluray-1.5.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libcdio",
+      "version": "2.4.0-1",
+      "arch": "aarch64",
+      "size": 255580,
+      "sha256": "b7f6c736639ae940ece6493ac851e21459ebe1cc4d6e82f5513acf9756eefa43",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libcdio-2.4.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libcdio-paranoia",
+      "version": "10.2+2.0.2-3",
+      "arch": "aarch64",
+      "size": 64788,
+      "sha256": "5eef0d0f3188fa36325679dca6caceb9df0a5cc361f4b4e5d179cade0587317b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libcdio-paranoia-10.2+2.0.2-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 257396,
+      "sha256": "199ae6e22c55d1c621ccbdf175d59a7c1933b16b00c77203d854570836d23a59",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "volume_key",
+      "version": "0.3.12-12",
+      "arch": "aarch64",
+      "size": 123192,
+      "sha256": "0effd7c5a0b829498e8f8c0e45f238fb01338e29dd7880e52e2ccb423d8cb642",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/volume_key-0.3.12-12-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-crypto",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 24268,
+      "sha256": "531d6003ed1ada001dbe2ab2b97dacf8cb879bac51ff2ad7e1cb6b470c65ee6a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-crypto-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libbytesize",
+      "version": "2.12-3",
+      "arch": "aarch64",
+      "size": 23864,
+      "sha256": "33178b35d92c0398c30c51f866c3d5ef585cc9fecc54eb8e2f4a7d85fcb08b67",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libbytesize-2.12-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "parted",
+      "version": "3.8-1",
+      "arch": "aarch64",
+      "size": 558744,
+      "sha256": "744a72b536094518d5408208b952eb92cf445d5137f95d589a2404d47a53d085",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/parted-3.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-fs",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 41520,
+      "sha256": "b9fe4f2aa2f1d13cfd5b4f6e58706cca8ad2811b66223a45c6797a4bfcd6b964",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-fs-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "mdadm",
+      "version": "4.6-2",
+      "arch": "aarch64",
+      "size": 382972,
+      "sha256": "a165c0279e845c03b7b20fcf67d88050d770c2ab15754b0a48728f3631f7f43e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/core/mdadm-4.6-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-mdraid",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 16012,
+      "sha256": "110ae16f67194e4ef5d4f4495465c55713a70b4adb5e5ac342cae7853b39ec83",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-mdraid-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-loop",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 8944,
+      "sha256": "89761362aca9110443d274b9be600d67fc298627892fb895cbbfcbc8c1fc7e35",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-loop-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnvme",
+      "version": "1.16.2-2",
+      "arch": "aarch64",
+      "size": 284860,
+      "sha256": "564e3bec1adb6d370d7f44b86e75db981cb64ebccdf9b708b0fa44f9f2d4f77c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnvme-1.16.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-nvme",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 26688,
+      "sha256": "75ac46abf9bbeb332faae5f2b0647807b72510bc40035a08db347b467b1d8ae4",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-nvme-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-part",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 17584,
+      "sha256": "6795401e58344230a74f0982564d2d822362aad65b48fe7486213730c368d0b6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-part-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libatasmart",
+      "version": "0.19-8",
+      "arch": "aarch64",
+      "size": 28316,
+      "sha256": "0c66ed04a747d3baf281f00b2b341e1d41624422509203666fe961326ef4039d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libatasmart-0.19-8-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-smart",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 26292,
+      "sha256": "5c2534e5e986054e915b2dd64fa3aab9373d573c5a453e4def7ac71fb37a34a1",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-smart-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libblockdev-swap",
+      "version": "3.5.0-2",
+      "arch": "aarch64",
+      "size": 10988,
+      "sha256": "9ff8297c040f57655b1c435af794224ac30cfefec50ef2a01ad2c734933a1c88",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libblockdev-swap-3.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "udisks2",
+      "version": "2.11.2-1",
+      "arch": "aarch64",
+      "size": 726396,
+      "sha256": "5b8b98acd55ceadbbed31813c90c8aa8c6773b32b2c52142888d09c81df94252",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/udisks2-2.11.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gvfs",
+      "version": "1.62.0-3",
+      "arch": "aarch64",
+      "size": 854708,
+      "sha256": "e7666623881d99ebe2695440a942e17acb05bca6862f98d522b13d8877159023",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gvfs-1.62.0-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "ministream",
+      "version": "0.99.1-1",
+      "arch": "aarch64",
+      "size": 16852,
+      "sha256": "6e446e8987dbf335f8e830a1a78c36d79fc139ed7d851a4b2422b14824aab37f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ministream-0.99.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libadwaita",
+      "version": "1:1.10.0-1",
+      "arch": "aarch64",
+      "size": 745896,
+      "sha256": "da53f6a11f846069cfd68df60902d27b7ab317b8c3aca3418349c19d7564755e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libadwaita-1:1.10.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libportal",
+      "version": "0.11.0-1",
+      "arch": "aarch64",
+      "size": 105696,
+      "sha256": "6582109400340020c47371df93dcf30766872d189811af1c7e14472caccfae40",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libportal-0.11.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libportal-gtk4",
+      "version": "0.11.0-1",
+      "arch": "aarch64",
+      "size": 12592,
+      "sha256": "c3d11b53afa23161149249d9fd13cc2add006950ccde58d43ed2846456fb0598",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libportal-gtk4-0.11.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "exempi",
+      "version": "2.6.6-3",
+      "arch": "aarch64",
+      "size": 551836,
+      "sha256": "1295c4cbe90317c62dd94bcda3f2b5c26d48403c15d44938498253da94a55032",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/exempi-2.6.6-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gsm",
+      "version": "1.0.24-1",
+      "arch": "aarch64",
+      "size": 36536,
+      "sha256": "b7b47c8ebe3d0ef83875af1235fde8b3fa98fbfea930b380e9765c0cf71e3b0e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gsm-1.0.24-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libunibreak",
+      "version": "7.0-1",
+      "arch": "aarch64",
+      "size": 23916,
+      "sha256": "b76b357272df096180a3cb9e22f8586b0575d9d4e52b58459efff8d1a8f8461a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libunibreak-7.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libass",
+      "version": "0.17.5-1",
+      "arch": "aarch64",
+      "size": 103204,
+      "sha256": "88cbb23632552210e404ee7ecd35ac62201e707433b7abc2c0a00b4f84a53c95",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libass-0.17.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libraw1394",
+      "version": "2.1.2-4",
+      "arch": "aarch64",
+      "size": 46224,
+      "sha256": "6b212ae0cbac953c6ee36c2730f03f5ab6aa718e1595d8a8100b05c4a986fb23",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libraw1394-2.1.2-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libavc1394",
+      "version": "0.5.4-7",
+      "arch": "aarch64",
+      "size": 31748,
+      "sha256": "70c4c99b1341c7d1d49076ba1c46aee6705510360fe66bd79414f367b20a628f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libavc1394-0.5.4-7-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libbs2b",
+      "version": "3.1.0-11",
+      "arch": "aarch64",
+      "size": 16272,
+      "sha256": "e96c9d535005847769ace57397fee14d5be3704c6637fcbb39666605b19fea42",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libbs2b-3.1.0-11-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libdvdread",
+      "version": "7.1.1-1",
+      "arch": "aarch64",
+      "size": 127560,
+      "sha256": "e1d686bc1cc9c1a016026757380d59b899120c21a438a197f74678d018efbaa2",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libdvdread-7.1.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libdvdnav",
+      "version": "7.0.0-1",
+      "arch": "aarch64",
+      "size": 57352,
+      "sha256": "b2efacbf84af912d2c758687ed63058361d6bcf073c5ed04a7ae0ddebe42877e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libdvdnav-7.0.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libiec61883",
+      "version": "1.2.0-9",
+      "arch": "aarch64",
+      "size": 30756,
+      "sha256": "0ce1403ff5e051eb280b7027cc8f671bc58f335604aaa48a5d204b33bc1daae0",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libiec61883-1.2.0-9-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmodplug",
+      "version": "0.8.9.0-7",
+      "arch": "aarch64",
+      "size": 150424,
+      "sha256": "b981d39eaa65eab18192c174f2dfafe0cc2579a00d6defbc296cceed2e9a8517",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmodplug-0.8.9.0-7-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "portaudio",
+      "version": "1:19.7.0-4",
+      "arch": "aarch64",
+      "size": 91772,
+      "sha256": "01aeb9996f9d642008274c59c337b1c9f51e847d6106124752722bcae41bf911",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/portaudio-1:19.7.0-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libopenmpt",
+      "version": "0.8.9-1",
+      "arch": "aarch64",
+      "size": 1046948,
+      "sha256": "700975b5bc493bb8f55c6557cd8ef5d73cb46196244d1e3654a79a89d725150b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libopenmpt-0.8.9-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "shaderc",
+      "version": "2026.4-1",
+      "arch": "aarch64",
+      "size": 123840,
+      "sha256": "1226fd6b06bb34a1805ce2ff88d439dab1bcaee3e20f3b2054d75336e7757697",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/shaderc-2026.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libdovi",
+      "version": "3.4.0-1",
+      "arch": "aarch64",
+      "size": 239568,
+      "sha256": "5394d3887703918d344bb60ee30f747e14136d6d907a17e7d6a742a4fa6867bc",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libdovi-3.4.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xxhash",
+      "version": "0.8.4-1",
+      "arch": "aarch64",
+      "size": 91556,
+      "sha256": "28a6488aca21b1ddf92475a08c95c45a80baf5c6ac51fdb7a225cf8ae074a1c6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xxhash-0.8.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libplacebo",
+      "version": "7.360.1-7",
+      "arch": "aarch64",
+      "size": 459504,
+      "sha256": "9230c578b13612b2577b00434a44f8dd93b2cdf40ad097ea7cc9f95127f2443a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libplacebo-7.360.1-7-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libsoxr",
+      "version": "0.1.3-5",
+      "arch": "aarch64",
+      "size": 59252,
+      "sha256": "c61e55285c17399b1fa70a35524b80049bc34bbc21c6f3e96537e01e7635e8e7",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libsoxr-0.1.3-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libssh",
+      "version": "0.12.2-1",
+      "arch": "aarch64",
+      "size": 233504,
+      "sha256": "7ffb12281aa0a78456124c6a7500f48b03ac6a97f86125a6986d76bdbd31b2f3",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libssh-0.12.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libtheora",
+      "version": "1.2.0-1",
+      "arch": "aarch64",
+      "size": 380664,
+      "sha256": "cb43eaac20d6e338502147d328843299f37be6a3bb97afab57dc2afdfbdc102f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libtheora-1.2.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libvdpau",
+      "version": "1.5-4",
+      "arch": "aarch64",
+      "size": 58712,
+      "sha256": "661b2f9d9be5306c16368806b2df2044a404a8bbf9c58deeb0ecd88d8b309877",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libvdpau-1.5-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libvpx",
+      "version": "1.17.0-1",
+      "arch": "aarch64",
+      "size": 1377516,
+      "sha256": "4ed1aac5b0e9c9d73ea6366b701f16034e1b634bfd07c4d935eae7ebf5fcb1a1",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libvpx-1.17.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "ocl-icd",
+      "version": "2.3.5-1",
+      "arch": "aarch64",
+      "size": 74732,
+      "sha256": "fd826f2eb9888ebddce07e89ef6069f4f10d2120ae2cf2e2d424b4c25ba88b60",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ocl-icd-2.3.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "opencore-amr",
+      "version": "0.1.6-2",
+      "arch": "aarch64",
+      "size": 136700,
+      "sha256": "7a81ea01d12d4a83879204d8be2071d2417d21cced2ed8e076ab309a951ba98e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/opencore-amr-0.1.6-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "openjpeg2",
+      "version": "2.5.4-1",
+      "arch": "aarch64",
+      "size": 942812,
+      "sha256": "aa64049214538bcb2830415891af2d494dfdbb1b930b0f251da4f99acf231f47",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/openjpeg2-2.5.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libsamplerate",
+      "version": "0.2.2-3",
+      "arch": "aarch64",
+      "size": 989352,
+      "sha256": "9292168d3d836579fb1af20ede097470638332bb2691097ea760b7396a1ce6ca",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libsamplerate-0.2.2-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "rubberband",
+      "version": "4.0.0-2",
+      "arch": "aarch64",
+      "size": 212300,
+      "sha256": "22f46afe465016fef8e9e1738a38e3ee0b966cb19090b05b6d39155b12912b26",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/rubberband-4.0.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "hidapi",
+      "version": "0.15.0-1",
+      "arch": "aarch64",
+      "size": 42400,
+      "sha256": "3c29d538838d3cedfaee37291cc139ffe07e9a9cd8da1c24ed8e58da5febd670",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/hidapi-0.15.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "sdl3",
+      "version": "3.4.18-1",
+      "arch": "aarch64",
+      "size": 1501052,
+      "sha256": "eab78f77c8c0705db42fc8f04d685020c710cd04b6785c6b31b5a1d94aa93487",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/sdl3-3.4.18-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "sdl2-compat",
+      "version": "2.32.74-1",
+      "arch": "aarch64",
+      "size": 457812,
+      "sha256": "11fc30912191f981b10710b4327c4ee25ca429745a08310142b0e94bb1083684",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/sdl2-compat-2.32.74-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "snappy",
+      "version": "1.3.1-1",
+      "arch": "aarch64",
+      "size": 35280,
+      "sha256": "06292a50b1d4874b7ce1f0ae6910447f66ea6d48d5bd68eaec43beb372c99ae1",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/snappy-1.3.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmd",
+      "version": "1.3.0-1",
+      "arch": "aarch64",
+      "size": 54364,
+      "sha256": "e2f1090d6e3401da5655ac553398bd47338c4c6e39ac0ed684a9b4f33707354b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmd-1.3.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libbsd",
+      "version": "0.12.2-2",
+      "arch": "aarch64",
+      "size": 164028,
+      "sha256": "3d47f2e64ab9c2dfbdc5791ad7db237ed3c9708ad80718c26f4b850cf2b69238",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libbsd-0.12.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "sndio",
+      "version": "1.10.0-1",
+      "arch": "aarch64",
+      "size": 121920,
+      "sha256": "89d0daf0976681633039f0354eccc5b379e93ead2c78aae247f9adf59e2b378e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/sndio-1.10.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "speexdsp",
+      "version": "1.2.1-3",
+      "arch": "aarch64",
+      "size": 456100,
+      "sha256": "474d8d6785c920004585c9d37d06264efcdce3d87b48b952e9c20f9f4d180c03",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/speexdsp-1.2.1-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "speex",
+      "version": "1.2.1-3",
+      "arch": "aarch64",
+      "size": 487604,
+      "sha256": "b4676f1956136934d860abe050a792cca399554261e7f6bd89e5a222348afee6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/speex-1.2.1-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "srt",
+      "version": "1.5.7-2",
+      "arch": "aarch64",
+      "size": 477532,
+      "sha256": "e8758db0b9ca7f729f2c9a101f71805cfc37c77eed01e74eafcf5c89c4469007",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/srt-1.5.7-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "zimg",
+      "version": "3.0.6-2",
+      "arch": "aarch64",
+      "size": 115668,
+      "sha256": "787c6dc29872e3cb900d51f90bfa1e7bfd069d8f91a4ea7e2b57740b71e381f7",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/zimg-3.0.6-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "vapoursynth",
+      "version": "80-1",
+      "arch": "aarch64",
+      "size": 1624620,
+      "sha256": "92bfe702802d00826933e5c3ac711709c6132f76813c168b0b98122499199536",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/vapoursynth-80-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "vid.stab",
+      "version": "1.1.2-1",
+      "arch": "aarch64",
+      "size": 90116,
+      "sha256": "bd6c00bc0742368ee778c7c8df002f355c352015bb4f428cada649f3e314f416",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/vid.stab-1.1.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "l-smash",
+      "version": "2.14.5-4",
+      "arch": "aarch64",
+      "size": 292012,
+      "sha256": "a531dfd5c54afa31c9cc0f4b6969e7633774345db0b9e39dd8e302327d101165",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/l-smash-2.14.5-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "x264",
+      "version": "3:0.165.r3222.b35605a-2",
+      "arch": "aarch64",
+      "size": 569292,
+      "sha256": "ef95679c4ecf842fd08d1e49c61977c39fb38f0c2c67384130e9aba860229f70",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/x264-3:0.165.r3222.b35605a-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "x265",
+      "version": "4.3-1",
+      "arch": "aarch64",
+      "size": 1254356,
+      "sha256": "dbdde57f05a0c77eaa5fe5e74edba74b19c072cd98350ea1d7ae8a8f50089898",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/x265-4.3-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xvidcore",
+      "version": "1.3.7-4",
+      "arch": "aarch64",
+      "size": 162680,
+      "sha256": "3a502aa526a48dc0e98744ad6bd91e777fc6d97866412e8558feb4663093045c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xvidcore-1.3.7-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "ffmpeg",
+      "version": "2:9.0.2-2",
+      "arch": "aarch64",
+      "size": 13338768,
+      "sha256": "086828ab8ceb02bcc94fcaf8cecfe3e78c62f3b7c41026e5b712dff57992c832",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ffmpeg-2:9.0.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gupnp-dlna",
+      "version": "0.12.0-5",
+      "arch": "aarch64",
+      "size": 96076,
+      "sha256": "5e36773aa188c5f4e76251a4604ee6fb23ab1653e0df05deafa65d34b905dc0d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gupnp-dlna-0.12.0-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libcue",
+      "version": "2.3.0-1",
+      "arch": "aarch64",
+      "size": 19432,
+      "sha256": "ef42ee13529eb013f0878cb4bc0d98f2e55dcd59d72d55629a08ec5900604b6b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libcue-2.3.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libexif",
+      "version": "0.6.26-1",
+      "arch": "aarch64",
+      "size": 496132,
+      "sha256": "f3126e9de05ee7c82fd9c55b98fe3e8c5a1c9b39b7fab223be65820f5aefedfa",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libexif-0.6.26-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libgsf",
+      "version": "1.14.60-1",
+      "arch": "aarch64",
+      "size": 267316,
+      "sha256": "4028f44d83b2956ba2931d32aee8cceecbd6481e2febf86a3b6bfed69ef403d5",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libgsf-1.14.60-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libgxps",
+      "version": "0.3.2-5",
+      "arch": "aarch64",
+      "size": 101232,
+      "sha256": "2d2d0f1d18a17398b351e19452af982a8b3bc7b03d4ab3124c15e127f63e7f8f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libgxps-0.3.2-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libiptcdata",
+      "version": "1.0.5-5",
+      "arch": "aarch64",
+      "size": 42984,
+      "sha256": "65ce932d2b5f8937cb748a0e338c4ee5ff025bcbb226f7433ba9936353118de6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libiptcdata-1.0.5-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmms",
+      "version": "0.6.4-6",
+      "arch": "aarch64",
+      "size": 28364,
+      "sha256": "fa13751f74e5e23b89adf1c5c2100937e2b5be748ff0ccf8a66f3b884df03307",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmms-0.6.4-6-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libzen",
+      "version": "0.4.41-3",
+      "arch": "aarch64",
+      "size": 122172,
+      "sha256": "de8f70a38e5663e18ae2bbea95e92e38cd9f063f261831900d5d9d093f7d443b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libzen-0.4.41-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "tinyxml2",
+      "version": "11.0.0-2",
+      "arch": "aarch64",
+      "size": 45844,
+      "sha256": "245176325f0dd10099b7c30365fd1fcccc0db99a54d7a20881045bc740291731",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/tinyxml2-11.0.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libxpm",
+      "version": "3.5.20-1",
+      "arch": "aarch64",
+      "size": 68668,
+      "sha256": "dc82c0773217175b9dac4f2a6859d1e325855ef976f2b274da021cfa94f2d830",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libxpm-3.5.20-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "aom",
+      "version": "3.15.2-1",
+      "arch": "aarch64",
+      "size": 2684544,
+      "sha256": "52b72467e7f72e693322b0ce156ef2bff104b585710ba2cc8c0e5a04855e6833",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/aom-3.15.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libyuv",
+      "version": "r2921+644251f25-1",
+      "arch": "aarch64",
+      "size": 177656,
+      "sha256": "fd92999ccf6f56257ff4bf196dd75d93c2be5801de89af244f4568a0757ce06b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libyuv-r2921+644251f25-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "rav1e",
+      "version": "0.8.1-3",
+      "arch": "aarch64",
+      "size": 1155372,
+      "sha256": "a4cd3de43626582c42c89627a52bdf3856fed2e3f3a2d378c9e101911b6bb396",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/rav1e-0.8.1-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libavif",
+      "version": "1.4.2-1",
+      "arch": "aarch64",
+      "size": 273668,
+      "sha256": "266d75081a73bf1ac3ac573a81462adf39469d1533884fc5da7900ad8db37bb8",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libavif-1.4.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libde265",
+      "version": "1.1.3-1",
+      "arch": "aarch64",
+      "size": 274188,
+      "sha256": "a76c383bb8140cfbf0f5d5ed03a9c64b9e847d4eb5abf055052ad925c9d17025",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libde265-1.1.3-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libheif",
+      "version": "1.23.6-1",
+      "arch": "aarch64",
+      "size": 852436,
+      "sha256": "f9aac323027e8edac1899e9eacd1bbd13fc56c79f3c7fb0b74362cd98e9616a1",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libheif-1.23.6-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gd",
+      "version": "2.3.3-9",
+      "arch": "aarch64",
+      "size": 141372,
+      "sha256": "ada6619e298f3fbf8c29b397320c72077ac31d26ca8e3ac6aa2519ac75c614e6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gd-2.3.3-9-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "jbig2dec",
+      "version": "0.20-1",
+      "arch": "aarch64",
+      "size": 56496,
+      "sha256": "394cb9671936db5e1cf8f6e43294e66c82952b8677a8c4537527877606aef29f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/jbig2dec-0.20-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libpaper",
+      "version": "2.2.8-1",
+      "arch": "aarch64",
+      "size": 49912,
+      "sha256": "b5ef8ad6e73e2667365a45fe947ef11099553cd8fc456ba55ae85e6cc79d1438",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libpaper-2.2.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "ijs",
+      "version": "0.35-7",
+      "arch": "aarch64",
+      "size": 51736,
+      "sha256": "47d59b1255b7dd72ccf3997f669295c9d3b8f89170d0056807c5b1ecb2f235f1",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ijs-0.35-7-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libidn",
+      "version": "1.44-1",
+      "arch": "aarch64",
+      "size": 296072,
+      "sha256": "f5c4dcea4f294108c173ff4054f498e6d5729d06695a88c6c65be1184a67be9f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libidn-1.44-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "poppler-data",
+      "version": "0.4.12-2",
+      "arch": "any",
+      "size": 1605592,
+      "sha256": "33133fcac9cc23446a328260baff65e44b75311a3fcd25f06aabdd7ac3d9cfbf",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/poppler-data-0.4.12-2-any.pkg.tar.xz"
+    },
+    {
+      "name": "ghostscript",
+      "version": "10.08.0-1",
+      "arch": "aarch64",
+      "size": 20363900,
+      "sha256": "6683a30410e8b6e32d1d6fb43013fa17117b4092ec32cae04a2ca0bbfc2a9008",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/ghostscript-10.08.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "netpbm",
+      "version": "10.86.51-2",
+      "arch": "aarch64",
+      "size": 3663172,
+      "sha256": "ec3548381e6e4bb8aff58f11864c1f91852a3d63a4e6e7c710aa56e44dffe960",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/netpbm-10.86.51-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gts",
+      "version": "0.7.6.121130-5",
+      "arch": "aarch64",
+      "size": 190552,
+      "sha256": "b6e3a754dd855be2efd0edc149de0ab935696a784c13e02a5bfb9b8ed9f5318f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gts-0.7.6.121130-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gsfonts",
+      "version": "20200910-6",
+      "arch": "any",
+      "size": 1522580,
+      "sha256": "5336af885d78a5c83510387d24e3d75b0abe0d640eb109349b61d896a4475f60",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gsfonts-20200910-6-any.pkg.tar.xz"
+    },
+    {
+      "name": "graphviz",
+      "version": "16.1.0-2",
+      "arch": "aarch64",
+      "size": 3502380,
+      "sha256": "8719d2b7176cd1156d3151cc8509280e927c7e8e57baaf3cbd182c5b5ee18857",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/graphviz-16.1.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmediainfo",
+      "version": "26.10-1",
+      "arch": "aarch64",
+      "size": 3201596,
+      "sha256": "ec191abd0832e63f9959c1a19d920c16c80a27b870c40a6cebe8cd190ed1c401",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmediainfo-26.10-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "osinfo-db",
+      "version": "20260812-1",
+      "arch": "any",
+      "size": 219772,
+      "sha256": "bd57dfdce1e59261487126b309eb7e025d286140d8418e695a8eba2993e23019",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/osinfo-db-20260812-1-any.pkg.tar.xz"
+    },
+    {
+      "name": "libosinfo",
+      "version": "1.12.0-3",
+      "arch": "aarch64",
+      "size": 265024,
+      "sha256": "9f433f6b500c1f43af682cae84a1f05256e9761e1a346913b99819063a10c47c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libosinfo-1.12.0-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gpgmepp",
+      "version": "2.2.0-1",
+      "arch": "aarch64",
+      "size": 151332,
+      "sha256": "e2e058b9eb3fdf64e3be23be25a0959af815bf919b714252017bef600e6bf2cb",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gpgmepp-2.2.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "poppler",
+      "version": "26.10.0-1",
+      "arch": "aarch64",
+      "size": 1651564,
+      "sha256": "4f4df8a0175e0ca134fb4dace60729176ea6b6f774d787ad42050b86311e4e9c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/poppler-26.10.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "poppler-glib",
+      "version": "26.10.0-1",
+      "arch": "aarch64",
+      "size": 351944,
+      "sha256": "ce2dc77c852eb39216e42ee82d70c6aa3feadca8f5505fcd99a140ca9da59c76",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/poppler-glib-26.10.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "uchardet",
+      "version": "0.0.8-4",
+      "arch": "aarch64",
+      "size": 74640,
+      "sha256": "c9cfa37e4626143ac56e6c1156144ea179e5b44cb34bf96cf0243bac61886057",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/uchardet-0.0.8-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "totem-pl-parser",
+      "version": "3.26.7-1",
+      "arch": "aarch64",
+      "size": 119296,
+      "sha256": "a2a4da1044d10c0f3ef25ddfc801f004c7064d8ed16f0f58009a7037a7b1d69d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/totem-pl-parser-3.26.7-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "localsearch",
+      "version": "3.12.0-1",
+      "arch": "aarch64",
+      "size": 578232,
+      "sha256": "428fe5e942e0847a967a7a8ba4bbe329e4f1cb479b3c5121a78f688d19dc8f62",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/localsearch-3.12.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xdg-user-dirs",
+      "version": "0.20-1",
+      "arch": "aarch64",
+      "size": 44136,
+      "sha256": "249c5662c50da333e7cf5242d3c32306ef7780c9b8196060e91d46a75f49c9c5",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xdg-user-dirs-0.20-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xdg-user-dirs-gtk",
+      "version": "0.16-1",
+      "arch": "aarch64",
+      "size": 47892,
+      "sha256": "2c513964891c61f7eb45b36ea8ce702cd79c217bb378db556bf61af302372aa0",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xdg-user-dirs-gtk-0.16-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnautilus-extension",
+      "version": "51.1-1",
+      "arch": "aarch64",
+      "size": 31424,
+      "sha256": "d7cf8c33c348aaeada2de69210da1514c019549c8866c4185c30cfd512075a1a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnautilus-extension-51.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "nautilus",
+      "version": "51.1-1",
+      "arch": "aarch64",
+      "size": 2274056,
+      "sha256": "39e7e6dfa6491c6ed7792d9a1a1eec7936adcd485116ad0be655875f4b14960d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/nautilus-51.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "editorconfig-core-c",
+      "version": "0.12.11-1",
+      "arch": "aarch64",
+      "size": 31664,
+      "sha256": "21acd0a1c77fd1487f229463c8cbd7dde26bb07086b342dfad9edd3fe6af4628",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/editorconfig-core-c-0.12.11-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gtksourceview5",
+      "version": "5.22.0-1",
+      "arch": "aarch64",
+      "size": 933416,
+      "sha256": "91538fb1ab830ada20c591cc4be3a3bd4d0d3f6246876ace426741169413bfe0",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gtksourceview5-5.22.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "enchant",
+      "version": "2.8.21-1",
+      "arch": "aarch64",
+      "size": 76788,
+      "sha256": "dfaf82efb0814c68e14255aff50db1e3330c8ef26f3b3236f7a121fe4e50c1e6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/enchant-2.8.21-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libspelling",
+      "version": "0.4.10-2",
+      "arch": "aarch64",
+      "size": 76984,
+      "sha256": "0351ac16116f9db46700649d2edcd56646c1febf90e1afa5eae73e4fe96466d7",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libspelling-0.4.10-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gnome-text-editor",
+      "version": "51.0-1",
+      "arch": "aarch64",
+      "size": 631748,
+      "sha256": "e46f8228a6ddcd09c180865cdc0ac0ccd26a85a662251ba45188799dcac1cf16",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gnome-text-editor-51.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "djvulibre",
+      "version": "3.5.30.1-1",
+      "arch": "aarch64",
+      "size": 979388,
+      "sha256": "5bb7dca21f2e99bcc239f6c9dfcf98b313c887a38277d15f69a7944542bbe452",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/djvulibre-3.5.30.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gspell",
+      "version": "1.14.5-1",
+      "arch": "aarch64",
+      "size": 98180,
+      "sha256": "e966f4e497743e262d91cd1d912015afdb705090b66519a7dd0096c65f533517",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gspell-1.14.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libhandy",
+      "version": "1.8.3-3",
+      "arch": "aarch64",
+      "size": 416356,
+      "sha256": "2296755cd71dfd72b3ad413f3c263b2717979159fcee99f9666302f4ac059f5e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libhandy-1.8.3-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libspectre",
+      "version": "0.2.12-2",
+      "arch": "aarch64",
+      "size": 29488,
+      "sha256": "008855c484fee576f32c9678c0e8939ed1861698461a6d6e1c799bb769825cf8",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libspectre-0.2.12-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libsynctex",
+      "version": "2026.0-4",
+      "arch": "aarch64",
+      "size": 44584,
+      "sha256": "7200b46358d67ad8cb9473b876b2e069db7317e888f477afbb677c8e35fc73fa",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libsynctex-2026.0-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "evince",
+      "version": "1:48.4-2",
+      "arch": "aarch64",
+      "size": 2114408,
+      "sha256": "37640e038a92bf1bcce42e08b871f859dc7dc69bef1748a21f999a3c3404a9ff",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/evince-1:48.4-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "glu",
+      "version": "9.0.3-3",
+      "arch": "aarch64",
+      "size": 168104,
+      "sha256": "11681b09efcadbdcec919b86ebf1a936a9b4b8b5daeeded0bd716151c2354f40",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/glu-9.0.3-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnsbmp",
+      "version": "0.1.7-2",
+      "arch": "aarch64",
+      "size": 11400,
+      "sha256": "c70e67438df8dd7ebb602eebcea5ae3cf6b04e8e99dd56a9055710871d72ca40",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnsbmp-0.1.7-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnsgif",
+      "version": "1.0.0-2",
+      "arch": "aarch64",
+      "size": 16344,
+      "sha256": "e9b9640e1e66be449af09259aebd203b3dd25c8188b1f3e8f61d4a11d85965a5",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnsgif-1.0.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "qoi",
+      "version": "r350.4461cc3-1",
+      "arch": "any",
+      "size": 8120,
+      "sha256": "911d47ac994aa9cef86100aceb83e63ebd7b06030c4b891826023dbd95d1645e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/qoi-r350.4461cc3-1-any.pkg.tar.xz"
+    },
+    {
+      "name": "imv",
+      "version": "5.0.1-2",
+      "arch": "aarch64",
+      "size": 70192,
+      "sha256": "4fa4de032dd0bc6cdce9f30db2f182fb5f6d7099a3317639153515aa003a53ee",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/imv-5.0.1-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libsixel",
+      "version": "1.10.5-1",
+      "arch": "aarch64",
+      "size": 116672,
+      "sha256": "291e548034e86e377a8d26fe9997792c5be3a2755196a8d71d3960293a0391f3",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libsixel-1.10.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libxpresent",
+      "version": "1.0.2-1",
+      "arch": "aarch64",
+      "size": 18276,
+      "sha256": "823c8ec29e28d556141de064b0664598d17668cd7ee3ed2f8ffaebe7a653d49d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libxpresent-1.0.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "luajit",
+      "version": "2.1.1792588164+a4c0645-1",
+      "arch": "aarch64",
+      "size": 298628,
+      "sha256": "a641112b03bddb9179319443edff560cd51030c02284cc02be580408c0d33c2a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/luajit-2.1.1792588164+a4c0645-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "mujs",
+      "version": "1.3.10-1",
+      "arch": "aarch64",
+      "size": 247320,
+      "sha256": "a815d9c42908c9ed96e285900d688bdfd8fd79de0cd42fc7cd38f7e314807fd4",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/mujs-1.3.10-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "openal",
+      "version": "1.25.2-2",
+      "arch": "aarch64",
+      "size": 814460,
+      "sha256": "5346124d1da6b462b9b284a42d5cf018d93cf02737262167a27bd7c0f4ee8664",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/openal-1.25.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "mpv",
+      "version": "1:0.41.0-6",
+      "arch": "aarch64",
+      "size": 1457168,
+      "sha256": "6c89d00736820210a3c7f32af4cf95d155191d463f9df8bd22137c45f30a554a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/mpv-1:0.41.0-6-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "hunspell",
+      "version": "1.7.5-1",
+      "arch": "aarch64",
+      "size": 375728,
+      "sha256": "ea3c212c9e91fee5fec75c663f867aa47bf685d20b2ca7f0e214e205828bbfd7",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/hunspell-1.7.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "librevenge",
+      "version": "0.0.6-1",
+      "arch": "aarch64",
+      "size": 609156,
+      "sha256": "8ddfb471294b5725dc26b6693562ee45d6e340525433918a7a3bfedbb7df944b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/librevenge-0.0.6-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libwpd",
+      "version": "0.10.3-6",
+      "arch": "aarch64",
+      "size": 1045116,
+      "sha256": "e02321757524a9faa06e0772f482b3cc1f44d1f53f5e24d53bce17eed67b381a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libwpd-0.10.3-6-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libwps",
+      "version": "0.4.14-4",
+      "arch": "aarch64",
+      "size": 796312,
+      "sha256": "7791ec9e1e94f0c53c5d4d3c738801b0b5b337dea3fab4c29896122a036453cb",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libwps-0.4.14-4-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "neon",
+      "version": "0.37.1-1",
+      "arch": "aarch64",
+      "size": 236500,
+      "sha256": "79ac8f97ee04146ffdbedc113d9b0c4fd43eeeec4021175ed56b7ea7d389d31a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/neon-0.37.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "raptor",
+      "version": "2.0.16-9",
+      "arch": "aarch64",
+      "size": 284908,
+      "sha256": "ae9c46f5d7f66abdc2f6de658203e8e01c3032799baf5e358b6a005cf904890f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/raptor-2.0.16-9-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "rasqal",
+      "version": "1:0.9.33-9",
+      "arch": "aarch64",
+      "size": 449808,
+      "sha256": "3761ae5d297592293e38f86bd02f2dd268697e46a22f152ac86a0024202e6c81",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/rasqal-1:0.9.33-9-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "redland",
+      "version": "1:1.0.17-10",
+      "arch": "aarch64",
+      "size": 192200,
+      "sha256": "f1e077be478f813def031130ff1618ceeca3baa764c4412dec7c4a5ce101abb4",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/redland-1:1.0.17-10-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "hyphen",
+      "version": "2.8.9-1",
+      "arch": "aarch64",
+      "size": 16676,
+      "sha256": "cc2bc23b8950812206fc5b27d6fa99d9340a6bacd33d3241cd24f5044801102e",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/hyphen-2.8.9-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "lpsolve",
+      "version": "5.5.2.14-1",
+      "arch": "aarch64",
+      "size": 439280,
+      "sha256": "d83fe78e6e518f22abcdfcf1e0786594ff75e6db6dfd23ed158d5be6a86d470d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/lpsolve-5.5.2.14-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libvisio",
+      "version": "0.1.11-1",
+      "arch": "aarch64",
+      "size": 773712,
+      "sha256": "dd9dc2cf0447069546ea42506062287ce8cf7f06db7c0701c96238e360f702d8",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libvisio-0.1.11-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "liblangtag",
+      "version": "0.6.8-1",
+      "arch": "aarch64",
+      "size": 310768,
+      "sha256": "748436020d6330627cdab8a481113be312ddd4e394308567174c3f72719ccf27",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/liblangtag-0.6.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libetonyek",
+      "version": "0.1.13-3",
+      "arch": "aarch64",
+      "size": 673836,
+      "sha256": "1ed91a61609f3373bc634fc8a44a8c22181e74156e48620918ccd7137a608415",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libetonyek-0.1.13-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libodfgen",
+      "version": "0.1.8-5",
+      "arch": "aarch64",
+      "size": 293572,
+      "sha256": "a0655c4703385ead51a6ddbe8f2e6ac12ecc37b1ba484f43925bae8bcd608e0a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libodfgen-0.1.8-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libcdr",
+      "version": "0.1.9-1",
+      "arch": "aarch64",
+      "size": 886028,
+      "sha256": "ab8b8b044432a66b6971a915610a10646b5bb42a0d92e3318c912f4c55e0154f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libcdr-0.1.9-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmspub",
+      "version": "0.1.5-1",
+      "arch": "aarch64",
+      "size": 489696,
+      "sha256": "337c494b4a3b712b416c292e19c34218d5dba482f3942fd26f146c29bcd74e8a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmspub-0.1.5-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "harfbuzz-icu",
+      "version": "14.6.0-1",
+      "arch": "aarch64",
+      "size": 8400,
+      "sha256": "5404df32231b65a9cfe8c18b2a9afed63781d321b42d8da485461fedb708e5cb",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/harfbuzz-icu-14.6.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "clucene",
+      "version": "2.3.3.4-17",
+      "arch": "aarch64",
+      "size": 706396,
+      "sha256": "420839a4fcd8da2c0d22901b69182bc4fc358d5f7367cef3203f70500deebf2d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/clucene-2.3.3.4-17-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libpagemaker",
+      "version": "0.0.4-5",
+      "arch": "aarch64",
+      "size": 182636,
+      "sha256": "bf7e36bdd2e4453c538f6c534a696f6bd10f0635fab5076572a738051289ce4b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libpagemaker-0.0.4-5-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libabw",
+      "version": "0.1.4-1",
+      "arch": "aarch64",
+      "size": 268696,
+      "sha256": "5360e6775156f8bcffc7a4a181f782b93df534b13c0484f9668661e46bc6f8fe",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libabw-0.1.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libmwaw",
+      "version": "0.3.23-1",
+      "arch": "aarch64",
+      "size": 2822640,
+      "sha256": "2548fa8bb8735820616c6e1771b8ef58771e2c0f54ff85307af45f891b05bf8c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libmwaw-0.3.23-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libe-book",
+      "version": "0.1.4-1",
+      "arch": "aarch64",
+      "size": 792376,
+      "sha256": "9b60283912d1cdfa755e3dc2d7b3548041af0abf51ab3ab27125fa1c1c4ea924",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libe-book-0.1.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libexttextcat",
+      "version": "3.4.8-1",
+      "arch": "aarch64",
+      "size": 200028,
+      "sha256": "e9f73ada1cfbfc55a078172e193dd5109bddc2ced0a487c74e4422ef3e1ee8d4",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libexttextcat-3.4.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "boost-libs",
+      "version": "1.92.0-1",
+      "arch": "aarch64",
+      "size": 5800604,
+      "sha256": "0a0e6f37821cfd34b077658e6e5ba6a73c648e2094ccd74eb489180ba455fead",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/boost-libs-1.92.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libixion",
+      "version": "0.20.0-9",
+      "arch": "aarch64",
+      "size": 362212,
+      "sha256": "1859ae6af3ba547a1679336fa17135e6d97c19a8189a97bf39ac15cd5adff18a",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libixion-0.20.0-9-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "liborcus",
+      "version": "0.21.0-8",
+      "arch": "aarch64",
+      "size": 855648,
+      "sha256": "012593e05569c9a88fdc77a7c02069e99a9cba8704557bdd7fb30ffad6fdb629",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/liborcus-0.21.0-8-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libcmis",
+      "version": "0.6.3-2",
+      "arch": "aarch64",
+      "size": 514916,
+      "sha256": "757f35051b3d26ac326851a28dcbe8e34ff431e2a5643ddfb632926afbd1d151",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libcmis-0.6.3-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libtommath",
+      "version": "1.3.0-2",
+      "arch": "aarch64",
+      "size": 44884,
+      "sha256": "9711421cceb72a6d6f2ccebb98f016643aeb0ebed3d8ec248b55e8630329ed35",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libtommath-1.3.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libzmf",
+      "version": "0.0.2-20",
+      "arch": "aarch64",
+      "size": 250072,
+      "sha256": "5ce872ae44c96b7a1209c80d1272053a926270a2d1c963892c9d443508a9bf5c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libzmf-0.0.2-20-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libatomic_ops",
+      "version": "7.8.2-2",
+      "arch": "aarch64",
+      "size": 67572,
+      "sha256": "c9c58729c3e5b1a4a0a38b3924000538ac9ba97f284594b174a6ea3bbb43c339",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libatomic_ops-7.8.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "xmlsec",
+      "version": "1.3.12-1",
+      "arch": "aarch64",
+      "size": 624096,
+      "sha256": "82a063279342a08e329f1ae98eb6b0dc841e5de5452954046f815d4e43cd236d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/xmlsec-1.3.12-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libnumbertext",
+      "version": "1.0.11-3",
+      "arch": "aarch64",
+      "size": 170980,
+      "sha256": "0e75d1706d9b2cddb6ffc84274b331047eee5d9dc17e000406432f118fd71b5c",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnumbertext-1.0.11-3-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libfreehand",
+      "version": "0.1.4-1",
+      "arch": "aarch64",
+      "size": 654652,
+      "sha256": "fc344f13996d99f37220cc899a6bf9742ff7860371ceea6037a955fd35cb4acb",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libfreehand-0.1.4-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libstaroffice",
+      "version": "0.0.8-1",
+      "arch": "aarch64",
+      "size": 693032,
+      "sha256": "43139aa54887dd0d57ae4d60fce929ffd15884e85da3e33dddfeb0a064657dc7",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libstaroffice-0.0.8-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libepubgen",
+      "version": "0.1.1-6",
+      "arch": "aarch64",
+      "size": 247044,
+      "sha256": "9177a3346bc66454656a7d4f6892f36356af70b02f5a5365c37ffc6f4d19bf0b",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libepubgen-0.1.1-6-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libqxp",
+      "version": "0.0.3-1",
+      "arch": "aarch64",
+      "size": 305452,
+      "sha256": "70bda5dfe1f01497089692b495d124fb60f3b93fd7a7b0aa23477c201efd1933",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libqxp-0.0.3-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "zint",
+      "version": "2.16.0-2",
+      "arch": "aarch64",
+      "size": 421000,
+      "sha256": "4fb1d8d02c66179345c0fbc7ad449e452e7aa10abfcdda34c4f28be0ff4fc765",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/zint-2.16.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "zxing-cpp",
+      "version": "3.1.1-1",
+      "arch": "aarch64",
+      "size": 777852,
+      "sha256": "efdca72e976e488dc7883f2b5b2392574b26369b8c769a37d9f8ecee727c35c5",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/zxing-cpp-3.1.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "argon2",
+      "version": "20190702-7",
+      "arch": "aarch64",
+      "size": 31300,
+      "sha256": "8014c5514291b0d5e2f65ea1b98474ea497f6f55df0b71df179e1b25d1bfde4d",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/argon2-20190702-7-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libreoffice-fresh",
+      "version": "26.8.1-2",
+      "arch": "aarch64",
+      "size": 144298940,
+      "sha256": "92d6fda539bfedb697f9ffbd63231e0ce099927ce679a85abe9963b3ec5da226",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libreoffice-fresh-26.8.1-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "libsigc++-3.0",
+      "version": "3.8.1-1",
+      "arch": "aarch64",
+      "size": 50704,
+      "sha256": "4c3926076c1569f6e270d09fae501572bb8aaa79df428fc570cda869c16ae1e8",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/libsigc++-3.0-3.8.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "glibmm-2.68",
+      "version": "2.90.0-1",
+      "arch": "aarch64",
+      "size": 1030780,
+      "sha256": "e19ae18a3aa17546fcbefe26f0653b0464ac8b3b18044e0695fc4fe1794130be",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/glibmm-2.68-2.90.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "cairomm-1.16",
+      "version": "1.18.1-1",
+      "arch": "aarch64",
+      "size": 89216,
+      "sha256": "8735696dec5df9333e5573efdcc8c8c648482af7c4bba672d806fe1a0f74e312",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/cairomm-1.16-1.18.1-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "pangomm-2.48",
+      "version": "2.58.0-1",
+      "arch": "aarch64",
+      "size": 113816,
+      "sha256": "8adb97267cfcc12c789fe9b07100a175433da02c2ebe5b58ba8e1fbb8e504ce9",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/pangomm-2.48-2.58.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "gtkmm-4.0",
+      "version": "4.24.0-1",
+      "arch": "aarch64",
+      "size": 1485176,
+      "sha256": "2550b889879ed76124eb5a34f2653b911f0b859f224a4bd27b53ae1d03aa5edf",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/gtkmm-4.0-4.24.0-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "pavucontrol",
+      "version": "1:6.2-2",
+      "arch": "aarch64",
+      "size": 206572,
+      "sha256": "55a8172ba43c1b53260b4b2a0a8c943209de7ada7f2ef48a06ab897996e48ae6",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/pavucontrol-1:6.2-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "python-cairo",
+      "version": "1.29.2-1",
+      "arch": "aarch64",
+      "size": 94324,
+      "sha256": "f695ba4d240e49b65a107313ba32eea4cc56110b450fba1ec8a20e70803c5a9f",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/python-cairo-1.29.2-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "blueman",
+      "version": "2.4.6-2",
+      "arch": "aarch64",
+      "size": 1366952,
+      "sha256": "34a11fc8e78cce1bd2e15caa45ff58b3c6255741356f28f3b9f2b72d433fe597",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/blueman-2.4.6-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "btop",
+      "version": "1.4.7-1",
+      "arch": "aarch64",
+      "size": 488176,
+      "sha256": "3b936e337ddb726c2606e229bdbe77cbdd0d099f83ac88f28dc90e44edeb8007",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/btop-1.4.7-1-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "grim",
+      "version": "1.5.0-2",
+      "arch": "aarch64",
+      "size": 19256,
+      "sha256": "d4acbdb9a4001587f6edb5f8019908cc8ea3290926862509b445b46286d24b77",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/grim-1.5.0-2-aarch64.pkg.tar.xz"
+    },
+    {
+      "name": "wl-clipboard",
+      "version": "1:2.3.0-1",
+      "arch": "aarch64",
+      "size": 33496,
+      "sha256": "723a63b140e00085a533ebb1ec36fa9305b5e6cbd8fb80c0521fbeff77a72982",
+      "url": "http://mirror.archlinuxarm.org/aarch64/extra/wl-clipboard-1:2.3.0-1-aarch64.pkg.tar.xz"
+    }
+  ]
+}

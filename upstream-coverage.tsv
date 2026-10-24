@@ -1,0 +1,165 @@
+requested_package	installed_version	available_package	repository	architecture	available_version
+aether		aether	omarchy	aarch64	4.32.0-2
+alsa-utils		alsa-utils	extra	aarch64	1.2.16-1
+asdcontrol		asdcontrol	omarchy	aarch64	1:0.6.0-2
+avahi	1:0.9rc5-2	avahi	extra	aarch64	1:0.9rc5-2
+base-devel		base-devel	core	any	1-2
+bash-completion		bash-completion	extra	any	2.18.0-1
+bat		bat	extra	aarch64	0.26.1-3
+bluez	5.87-2	bluez	extra	aarch64	5.87-2
+bluez-tools		bluez-tools	extra	aarch64	0.2.0-6
+bluez-utils	5.87-2	bluez-utils	extra	aarch64	5.87-2
+bolt		bolt	extra	aarch64	0.9.11-3
+brightnessctl		brightnessctl	extra	aarch64	0.5.1-3
+btop	1.4.7-1	btop	extra	aarch64	1.4.7-1
+chromium	153.0.8010.36-1	chromium	extra	aarch64	153.0.8010.36-1
+cliamp		cliamp	omarchy	aarch64	2.3.0-3
+cups		cups	extra	aarch64	2:2.4.20-1
+cups-filters		cups-filters	extra	aarch64	2.0.1-3
+cups-pk-helper		cups-pk-helper	extra	aarch64	0.2.7-2
+ddcutil		ddcutil	extra	aarch64	3.0.2-1
+disktree-bin		disktree-bin	omarchy	aarch64	0.11.0-3
+docker		docker	extra	aarch64	1:29.9.2-1
+docker-buildx		docker-buildx	extra	aarch64	0.38.1-1
+docker-compose		docker-compose	extra	aarch64	5.6.1-1
+dosfstools	4.2-5	dosfstools	core	aarch64	4.2-5
+dotnet-runtime		dotnet-runtime-bin	omarchy	aarch64	10.0.402-1
+evince	1:48.4-2	evince	extra	aarch64	1:48.4-2
+exfatprogs		exfatprogs	extra	aarch64	1.4.3-1
+expac		expac	extra	aarch64	10-13
+eza		eza	extra	aarch64	0.23.5-2
+fakeroot	1:1.37.2-3	fakeroot	core	aarch64	1:1.37.2-3
+fastfetch		fastfetch	extra	aarch64	2.70.0-1
+fcitx5		fcitx5	extra	aarch64	5.1.23-1
+fcitx5-chewing		fcitx5-chewing	extra	aarch64	5.1.13-1
+fcitx5-chinese-addons		fcitx5-chinese-addons	extra	aarch64	5.1.15-2
+fcitx5-gtk		fcitx5-gtk	extra	aarch64	5.1.7-1
+fcitx5-hangul		fcitx5-hangul	extra	aarch64	5.1.11-1
+fcitx5-mozc		fcitx5-mozc	extra	aarch64	3.35.6354.2-1
+fcitx5-qt		fcitx5-qt	extra	aarch64	5.1.16-2
+fcitx5-table-extra		fcitx5-table-extra	extra	any	5.1.13-1
+fd		fd	extra	aarch64	10.5.0-3
+ffmpeg	2:9.0.2-2	ffmpeg	extra	aarch64	2:9.0.2-2
+ffmpegthumbnailer		ffmpegthumbnailer	extra	aarch64	2.3.1-1
+fontconfig	2:2.18.3-2	fontconfig	extra	aarch64	2:2.18.3-2
+foot	1.28.0-2	foot	extra	aarch64	1.28.0-2
+fzf		fzf	extra	aarch64	0.74.5-1
+git	2.56.0-1	git	extra	aarch64	2.56.0-1
+gliff		gliff	omarchy	aarch64	0.4.0-1
+gnome-keyring	1:51.1-1	gnome-keyring	extra	aarch64	1:51.1-1
+gnome-themes-extra		gnome-themes-extra	extra	any	1:3.28-1
+grim	1.5.0-2	grim	extra	aarch64	1.5.0-2
+gpu-screen-recorder		gpu-screen-recorder	extra	aarch64	6.1.5-1
+gum	2.0.2-1	gum	extra	aarch64	2.0.2-1
+gvfs-mtp		gvfs-mtp	extra	aarch64	1.62.0-3
+gvfs-nfs		gvfs-nfs	extra	aarch64	1.62.0-3
+gvfs-smb		gvfs-smb	extra	aarch64	1.62.0-3
+herdr		herdr	omarchy	aarch64	0.9.1-2
+hype		hype	omarchy	aarch64	0.6.0-1
+hyprland	0.56.2-7	hyprland	omarchy	aarch64	0.56.2-7
+hyprland-guiutils	0.2.2-4	hyprland-guiutils	extra	aarch64	0.2.2-4
+hyprland-preview-share-picker		hyprland-preview-share-picker	omarchy	aarch64	0.2.1-3
+hyprpicker		hyprpicker	extra	aarch64	0.4.7-4
+hyprsunset		hyprsunset	extra	aarch64	0.4.0-3
+imagemagick		imagemagick	extra	aarch64	7.1.2.34-2
+imv	5.0.1-2	imv	extra	aarch64	5.0.1-2
+inetutils		inetutils	core	aarch64	2.8-1
+inotify-tools		inotify-tools	extra	aarch64	4.26.270-1
+inxi		inxi	extra	any	3.3.41.1-1
+networkmanager	1.58.1-2	networkmanager	extra	aarch64	1.58.1-2
+jq	1.8.2-1	jq	extra	aarch64	1.8.2-1
+kernel-modules-hook		kernel-modules-hook	extra	any	0.1.7-3
+lazygit		lazygit	extra	aarch64	0.66.2-1
+less		less	core	aarch64	1:710-1
+libsecret	0.21.8.2-1	libsecret	core	aarch64	0.21.8.2-1
+libvips		libvips	extra	aarch64	8.18.7-1
+libyaml		libyaml	extra	aarch64	0.2.5-3
+libreoffice-fresh	26.8.1-2	libreoffice-fresh	extra	aarch64	26.8.1-2
+localsend		localsend	omarchy	aarch64	1.18.2-1
+lua51		lua51	extra	aarch64	5.1.5-13
+luarocks		luarocks	extra	any	3.13.0-5
+man-db		man-db	core	aarch64	2.13.1-2
+mariadb-libs		mariadb-libs	extra	aarch64	13.0.2-2
+mise-bin		mise-bin	omarchy	aarch64	2026.10.17-1
+monologue		monologue	omarchy	aarch64	0.3.1-1
+moonlight-qt		moonlight-qt	extra	aarch64	6.2.0-1
+mpv	1:0.41.0-6	mpv	extra	aarch64	1:0.41.0-6
+mpv-mpris		mpv-mpris	extra	aarch64	1.3-1
+nautilus	51.1-1	nautilus	extra	aarch64	51.1-1
+nautilus-python		nautilus-python	extra	aarch64	4.2.0-1
+gnome-disk-utility		gnome-disk-utility	extra	aarch64	46.1-3
+noto-fonts		noto-fonts	extra	any	1:2026.10.01-1
+noto-fonts-cjk		noto-fonts-cjk	extra	any	20240730-1
+noto-fonts-emoji		noto-fonts-emoji	extra	any	1:2.057-1
+nss-mdns		nss-mdns	extra	aarch64	0.15.1-3
+nvim		not found under this name			
+obsidian		obsidian	omarchy	aarch64	1.14.5-1
+omacalc		omacalc	omarchy	aarch64	0.3.1-1
+omacut		omacut	omarchy	aarch64	0.7.2-1
+omawrite		omawrite	omarchy	aarch64	0.7.0-1
+omarchy-nvim		omarchy-nvim	omarchy	any	2026.9.21-5
+omarchy-hyprland-titlebars		omarchy-hyprland-titlebars	omarchy	aarch64	0.2.2-2
+omasnap		omasnap	omarchy	aarch64	1.21.0-2
+owe		owe	omarchy	aarch64	0.2.12-1
+owe-lockfeed		owe-lockfeed	omarchy	aarch64	0.2.10-2
+pacman-contrib	1.13.1-1	pacman-contrib	extra	aarch64	1.13.1-1
+pamixer		pamixer	extra	aarch64	1.6-3
+pinta		pinta	omarchy	aarch64	3.1.2-1
+plocate		plocate	extra	aarch64	1.1.25-1
+plymouth	26.134.222-3	plymouth	extra	aarch64	26.134.222-3
+postgresql-libs		postgresql-libs	extra	aarch64	18.6-4
+power-profiles-daemon		power-profiles-daemon	extra	aarch64	0.30-1
+python-gobject	3.58.1-1	python-gobject	extra	aarch64	3.58.1-1
+python-poetry-core		python-poetry-core	extra	any	2.5.0-1
+qt6-base	6.12.0-3	qt6-base	extra	aarch64	6.12.0-3
+qt6-declarative	6.12.0-2	qt6-declarative	extra	aarch64	6.12.0-2
+qt6-multimedia		qt6-multimedia	extra	aarch64	6.12.0-1
+qt6-svg	6.12.0-1	qt6-svg	extra	aarch64	6.12.0-1
+qt6-wayland	6.12.0-1	qt6-wayland	extra	aarch64	6.12.0-1
+ttfx		ttfx	omarchy	aarch64	0.5.0-3
+qemu-user-static-binfmt		qemu-user-static-binfmt	omarchy	aarch64	1:1.10.0.13+ds.0+deb13u1-1
+qrencode		qrencode	extra	aarch64	4.1.1-4
+qt6-imageformats		qt6-imageformats	extra	aarch64	6.12.0-1
+quickshell	0.3.2.r7.g2b4501a-1	quickshell	omarchy	aarch64	0.3.2.r7.g2b4501a-1
+ripgrep		ripgrep	extra	aarch64	15.2.0-1
+ruby		ruby	extra	aarch64	3.4.10-1
+sddm	0.21.0-7	sddm	extra	aarch64	0.21.0-7
+signed		signed	omarchy	aarch64	0.3.1-1
+slurp		slurp	extra	aarch64	1.5.0-2
+socat		socat	extra	aarch64	1.8.1.3-1
+starship		starship	extra	aarch64	1.27.0-1
+superwhisper-bin		superwhisper-bin	omarchy	aarch64	1.1.0-1
+sushi		sushi	extra	aarch64	51.2-1
+system-config-printer		system-config-printer	extra	aarch64	1.5.18-7
+tesseract		tesseract	extra	aarch64	5.5.3-1
+tesseract-data-eng		tesseract-data-eng	extra	any	2:4.1.0-5
+tldr		tldr	extra	any	3.4.4-1
+tree-sitter-cli		tree-sitter-cli	extra	aarch64	0.26.9-1
+tmux		tmux	extra	aarch64	3.8-1
+tobi-try		tobi-try	omarchy	any	1.10.1-3
+ttf-ia-writer		ttf-ia-writer	omarchy	any	20261002.r63-3
+ttf-jetbrains-mono-nerd-basic	3.5.1-2	ttf-jetbrains-mono-nerd-basic	omarchy	any	3.5.1-2
+tzupdate		tzupdate	omarchy	aarch64	3.1.0-2
+udiskie		udiskie	extra	any	2.7.0-2
+ufw		ufw	extra	any	0.36.2-7
+ufw-docker		ufw-docker	omarchy	any	251123-2
+unzip		unzip	extra	aarch64	6.0-23
+usage		usage	extra	aarch64	6.12.1-1
+uwsm	0.27.1-1	uwsm	extra	any	0.27.1-1
+vi		not found under this name			
+whois		whois	extra	aarch64	5.6.6-1
+wireless-regdb		wireless-regdb	core	any	2026.09.03-1
+wireplumber	0.5.18-1	wireplumber	extra	aarch64	0.5.18-1
+wl-clipboard	1:2.3.0-1	wl-clipboard	extra	aarch64	1:2.3.0-1
+wtype		wtype	extra	aarch64	0.4-2
+woff2-font-awesome		woff2-font-awesome	extra	any	7.3.1-1
+xdg-desktop-portal-gtk	1.15.3-2	xdg-desktop-portal-gtk	extra	aarch64	1.15.3-2
+xdg-desktop-portal-hyprland	1.4.1-2	xdg-desktop-portal-hyprland	extra	aarch64	1.4.1-2
+xdg-terminal-exec		xdg-terminal-exec	extra	any	0.14.3-2
+yaru-icon-theme		yaru-icon-theme	omarchy	any	26.10.3-3
+yay		yay	omarchy	aarch64	13.0.1-1
+yt-dlp		yt-dlp	extra	any	2025.12.08-2
+zbar		zbar	extra	aarch64	0.23.95-1
+zoxide		zoxide	extra	aarch64	0.10.0-1
+zram-generator		zram-generator	extra	aarch64	1.2.1-1
+rtkit		rtkit	extra	aarch64	0.14-2
