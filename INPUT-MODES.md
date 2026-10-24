@@ -45,13 +45,13 @@ Les sauvegardes privées et le journal sont dans `/var/lib/omarchy-ppp/input-mod
 | Reconnaissance de session | Régression reproduite, puis corrigée et contrôlée avec le vrai modèle SDDM en chroot |
 | Greeter sans clavier physique et connexion tactile | Fonctionnement confirmé par l'utilisateur après correction du sélecteur |
 | Session sans clavier | Racine SD, session locale seat0, Hyprland et Squeekboard en fonctionnement ; écran et tactile en transformation 0, aucune erreur de configuration |
-| Saisie tactile dans Foot | Processus Foot lancé ; frappe et touche Entrée restent à confirmer par l'utilisateur |
+| Saisie tactile dans Foot | Saisie de `echo test`, touche Entrée et résultat `test` confirmés par l'utilisateur |
 | Paysage automatique avec clavier officiel | À tester après démarrage avec clavier monté |
 | Montage/retrait du clavier à chaud | Non pris en charge par cette détection |
 
 Les premiers essais QML avec un contexte OpenGL hors écran ont avorté dans le chroot. Avec `QSG_RHI_BACKEND=null`, le formulaire se charge et son modèle de session est reconnu ; cela ne valide aucun rendu GPU. Les essais en chroot utilisent le noyau Sailfish, pas le noyau de la SD.
 
-Le premier essai matériel du greeter affichait « Session Omarchy Mobile absente ». Le sélecteur lisait `Qt.DisplayRole`, que `SessionModel` de SDDM 0.21 ne fournit pas ; le premier modèle simulé acceptait à tort tous les rôles. Le correctif utilise `FileRole` (`Qt.UserRole + 2`) et son chemin complet. Le test simulé refuse maintenant les rôles inconnus et un second test charge le vrai modèle de SDDM. Après installation du correctif sur la SD et nouveau démarrage, l'utilisateur confirme la connexion tactile. Les contrôles distants confirment une session locale Omarchy, l'écran interne et le tactile en transformation 0, le shell mobile et Foot lancés. Les journaux Squeekboard montrent le chargement du clavier `terminal/us`, mais cela ne prouve pas encore la saisie effective dans Foot.
+Le premier essai matériel du greeter affichait « Session Omarchy Mobile absente ». Le sélecteur lisait `Qt.DisplayRole`, que `SessionModel` de SDDM 0.21 ne fournit pas ; le premier modèle simulé acceptait à tort tous les rôles. Le correctif utilise `FileRole` (`Qt.UserRole + 2`) et son chemin complet. Le test simulé refuse maintenant les rôles inconnus et un second test charge le vrai modèle de SDDM. Après installation du correctif sur la SD et nouveau démarrage, l'utilisateur confirme la connexion tactile. Les contrôles distants confirment une session locale Omarchy, l'écran interne et le tactile en transformation 0, le shell mobile et Foot lancés. Les journaux Squeekboard montrent le chargement du clavier `terminal/us`. L'utilisateur a ensuite confirmé la saisie de `echo test`, la touche Entrée et le résultat `test` dans Foot. Cela valide cette saisie simple, pas l'ensemble des symboles et modificateurs.
 
 ## Test matériel court
 
