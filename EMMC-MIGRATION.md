@@ -1,6 +1,8 @@
 # Migration de cette microSD vers l'eMMC
 
-**Procédure spécifique au PinePhone Pro et au partitionnement Sailfish observé. Le code est préparé et testé pour ses transformations de configuration ; aucune migration matérielle n'est encore validée.**
+**Procédure spécifique au PinePhone Pro et au partitionnement Sailfish observé. La copie sur eMMC est effectuée et ses contrôles logiciels ont réussi ; le démarrage sans SD reste à valider.**
+
+La première exécution a terminé avec `MIGRATION_COMPLETE` et un statut systemd réussi après environ dix minutes. Les sauvegardes Sailfish ont été créées et comparées aux fichiers d'origine, `pacman -Dk` ne rapporte aucune erreur, les fichiers noyau/initramfs copiés correspondent à la source, et la table de partitions avant/après est identique. Les volumes cibles ont été démontés et SDDM a été relancé sur la SD. À ce stade le téléphone utilise toujours la SD : ne pas présenter ce résultat comme un démarrage eMMC réussi. La récupération des sauvegardes sur le Mac est encore en cours de préparation.
 
 La source active doit être `/dev/mmcblk1p2`, avec `/boot` sur `/dev/mmcblk1p1`. La cible doit être l'eMMC `/dev/mmcblk2`, avec trois partitions ext4 : p1 pour le démarrage (213,6 Mio), p2 pour l'ancien système Sailfish (7,4 Gio), p3 pour son ancien `/home` (107,6 Gio). Le script refuse d'autres types de périphériques, des partitions cibles déjà montées, une batterie inférieure à 60 % ou un téléphone qui n'est pas en charge.
 
@@ -31,11 +33,13 @@ Le mot de passe sudo est saisi localement, jamais dans le dépôt ou une image. 
 Suivi :
 
 ```sh
-tail -f /var/lib/omarchy-ppp/emmc-migration/migration.log
+journalctl -fu omarchy-emmc-migration.service
 systemctl show omarchy-emmc-migration -p ActiveState -p Result -p ExecMainStatus
 ```
 
 Les étapes sont `BACKUP`, `COPY_ROOT`, `COMMIT_ROOT`, puis `COMMIT_BOOT`. Le marqueur `MIGRATION_COMPLETE` n'est produit qu'après les contrôles et le démontage des partitions cibles. Une tentative interrompue laisse un marqueur `started` et le script refuse de recommencer automatiquement : examiner les journaux et les montages avant toute reprise.
+
+Le fichier `/var/lib/omarchy-ppp/emmc-migration/migration.log` est aussi conservé. Son répertoire parent appartient à root et reste privé sur la base testée ; utiliser le journal systemd pour le suivi sans sudo.
 
 Les sauvegardes résident sur p3 sous `/.omarchy-migration` une fois le système eMMC démarré. Depuis la SD, monter p3 pour y accéder. Les trois fichiers de récupération principaux sont `boot-before.img`, `sailfish-system.tar` et `sailfish-home.tar`, avec `SHA256SUMS`. Ils contiennent des secrets personnels : accès limité à root et au groupe du compte `terminal`. Les copier dans un dossier privé sur un autre support et vérifier leurs SHA-256 avant le premier essai eMMC. Ces fichiers ne sont pas une image complète du disque et leur copie sur la même eMMC ne protège pas d'une panne matérielle de celle-ci.
 
