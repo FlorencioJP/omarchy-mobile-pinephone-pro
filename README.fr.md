@@ -89,7 +89,7 @@ L'utilisateur a autorisé l'installation sur eMMC en remplacement de Sailfish. L
 | Tactile précis, veille et autonomie | Non validés |
 | Charge du téléphone depuis le clavier | Problème constaté : téléphone toujours en décharge |
 | Agrandissement de la SD | Non effectué |
-| Migration eMMC | Copie et contrôles terminés ; sauvegardes sur le Mac avec SHA-256 vérifiés ; démarrage sans SD à effectuer |
+| Migration eMMC | Premier démarrage eMMC confirmé, session/Wi-Fi/SSH opérationnels, environ 94 Gio libres ; SD encore insérée mais non montée, essai après retrait à effectuer |
 
 Une capture d'écran ne prouve pas l'accélération matérielle. Les fonctions Omarchy qui supposent son installation complète, notamment noyaux, chiffrement, snapshots ou réinstallation système, ne sont pas validées sur cette base ext4 mobile.
 

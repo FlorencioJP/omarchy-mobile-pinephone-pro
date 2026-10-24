@@ -1,6 +1,8 @@
 # Migration de cette microSD vers l'eMMC
 
-**Procédure spécifique au PinePhone Pro et au partitionnement Sailfish observé. La copie sur eMMC est effectuée et ses contrôles logiciels ont réussi ; le démarrage sans SD reste à valider.**
+**Procédure spécifique au PinePhone Pro et au partitionnement Sailfish observé. La copie et un premier démarrage sur eMMC sont validés ; le démarrage avec la microSD physiquement retirée reste à confirmer.**
+
+Le premier démarrage contrôlé utilise bien `/dev/mmcblk2p3` pour `/` et `/dev/mmcblk2p1` pour `/boot`, tous deux en ext4, avec environ 94 Gio disponibles. Une session Omarchy locale est ouverte, le Wi-Fi est connecté, SSH répond, Hyprland et Squeekboard fonctionnent en portrait, l'écran et le tactile sont en transformation 0 et aucune unité systemd n'est en échec. La carte SD était encore physiquement présente, ce que le propriétaire a confirmé ; aucune de ses partitions n'était montée. Le test après retrait de cette carte reste distinct et en attente.
 
 La première exécution a terminé avec `MIGRATION_COMPLETE` et un statut systemd réussi après environ dix minutes. Les sauvegardes Sailfish ont été créées et comparées aux fichiers d'origine, `pacman -Dk` ne rapporte aucune erreur, les fichiers noyau/initramfs copiés correspondent à la source, et la table de partitions avant/après est identique. Les volumes cibles ont été démontés et SDDM a été relancé sur la SD. Ils ont ensuite été remontés en lecture seule pour vérification et récupération. Les trois sauvegardes ont été transférées dans un dossier privé du Mac, avec leurs descriptions de partitions et leurs SHA-256 vérifiés : les trois contrôles réussissent. La configuration fstab, la référence de racine du script U-Boot et son en-tête ont aussi été vérifiés sur les fichiers eMMC. À ce stade le téléphone utilise toujours la SD : ne pas présenter ce résultat comme un démarrage eMMC réussi.
 
