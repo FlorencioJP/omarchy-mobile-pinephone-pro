@@ -1,0 +1,66 @@
+[
+  {
+    "id": "io.github.sahzudin.omassh",
+    "repository": "https://github.com/sahzudin/omassh",
+    "commit": "a8a4f14da76ad77bc7b66dbd9f4b3ff05ada9ceb",
+    "version": "0.1.0",
+    "archive_sha256": "4ddd486e17799949cf9a4dca07590ee3b3fe9303c3631991c08179307944f169",
+    "mobile_panel": true
+  },
+  {
+    "id": "andreconde.tmux",
+    "repository": "https://github.com/andreconde21/omarchy-remote-tmux",
+    "commit": "76b3974a9c7e5ae1970afea613288b355ebc66c0",
+    "version": "1.1.0",
+    "archive_sha256": "fae080018e49722d5421dfb4f4bea63aca6165c63e418991c1673912f200044a",
+    "mobile_panel": true
+  },
+  {
+    "id": "network-speed",
+    "repository": "https://github.com/csawy3r/omarchy-network-speed",
+    "commit": "d86f64cc34e5359763d9406a1be2c4fd739929e5",
+    "version": "1.0.0",
+    "archive_sha256": "27963a1e884d2d77befd2f2d47e72dee05a5b30a390ef73c9d9e8598ecd2c348",
+    "mobile_panel": true
+  },
+  {
+    "id": "io.github.woogy7.vitals",
+    "repository": "https://github.com/Woogy7/omarchy-vitals",
+    "commit": "e67a0a7776d8cd6bc02358671ba37e09bf47a65e",
+    "version": "1.1.1",
+    "archive_sha256": "6f3050f9d334a089b395e1fb4b25a921f6356a09e1b4cb4e2c6eeedd7e75608e",
+    "mobile_panel": true
+  },
+  {
+    "id": "nino.tailscale",
+    "repository": "https://github.com/OberdanSoldi/omarchy-tailscale",
+    "commit": "4a05e7c99bec21af26f02b657a1c0f47720363bf",
+    "version": "1.0.0",
+    "archive_sha256": "6a6b36301f03b7d90e3478439fa630aa02e1b3370c16c2a72cfa5784e69891d3",
+    "mobile_panel": true
+  },
+  {
+    "id": "remco.wireguard",
+    "repository": "https://github.com/r3mcos3/remco.wireguard",
+    "commit": "0bbe737da96008e6fc2b3b1f3aef9b49d249dcfb",
+    "version": "1.1.0",
+    "archive_sha256": "ebd5a01c0416d7d18a105fb589f3896a444eea23b6e72581e9fdf57be4357536",
+    "mobile_panel": true
+  },
+  {
+    "id": "tomv.battery-usage",
+    "repository": "https://github.com/OverStyleFR/omarchy-battery-usage",
+    "commit": "f3045c69d9bc0f1aa25da7acd32965431e55bf59",
+    "version": "1.2.1",
+    "archive_sha256": "fe02f6be46ca4d882755c8e05fed62b948244d4c0b0ad92fe671c1bf02866cad",
+    "mobile_panel": false
+  },
+  {
+    "id": "io.github.krongggggg.caffeine",
+    "repository": "https://github.com/krongggggg/omarchy-caffeine",
+    "commit": "4c328da89d32578c27e86137b8ee7affc01073d0",
+    "version": "1.0.0",
+    "archive_sha256": "de6da08d835fb6d2a7704b00b8bc92669460be3efd8f14c49bdc35addff592ba",
+    "mobile_panel": false
+  }
+]

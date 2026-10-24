@@ -25,4 +25,9 @@ jobs:
           python3 tests/input-modes.py
           python3 tests/emmc-config.py
           python3 tests/emmc-moves.py
+          python3 tests/power-status.py
+          python3 tests/plugin-archives.py
+          python3 tests/plugin-install.py
+          python3 tests/cellular-lock.py
+          bash -n extras/install-user-hook.sh extras/install-4g.sh extras/install-desktop.sh
           bash tests/user-configure.sh

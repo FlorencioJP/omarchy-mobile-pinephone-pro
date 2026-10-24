@@ -1,0 +1,37 @@
+[
+  {
+    "name": "libnma-common",
+    "version": "1.10.6-3",
+    "file": "libnma-common-1.10.6-3-aarch64.pkg.tar.xz",
+    "sha256": "a9283ef83f540ca43e8e16a2893f755a64c3007d382de143183be17c9014466e",
+    "arch": "aarch64",
+    "licenses": [
+      "GPL-2.0-or-later",
+      "LGPL-2.1-or-later"
+    ],
+    "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnma-common-1.10.6-3-aarch64.pkg.tar.xz"
+  },
+  {
+    "name": "libnma",
+    "version": "1.10.6-3",
+    "file": "libnma-1.10.6-3-aarch64.pkg.tar.xz",
+    "sha256": "719360ee68aa3e988bd6ee3001dfa315c983daa3aae3214773326e14cf782e3a",
+    "arch": "aarch64",
+    "licenses": [
+      "GPL-2.0-or-later",
+      "LGPL-2.1-or-later"
+    ],
+    "url": "http://mirror.archlinuxarm.org/aarch64/extra/libnma-1.10.6-3-aarch64.pkg.tar.xz"
+  },
+  {
+    "name": "nm-connection-editor",
+    "version": "1.36.0-2",
+    "file": "nm-connection-editor-1.36.0-2-aarch64.pkg.tar.xz",
+    "sha256": "4795da605ab5a21400531e7fb0717f20b3061c3cb0f5a25df179beac23f48b11",
+    "arch": "aarch64",
+    "licenses": [
+      "GPL-2.0-or-later"
+    ],
+    "url": "http://mirror.archlinuxarm.org/aarch64/extra/nm-connection-editor-1.36.0-2-aarch64.pkg.tar.xz"
+  }
+]

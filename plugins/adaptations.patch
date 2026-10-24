@@ -1,0 +1,552 @@
+--- a/andreconde.tmux/MobilePanel.qml
++++ b/andreconde.tmux/MobilePanel.qml
+@@ -0,0 +1,9 @@
++import QtQuick
++import "." as Source
++
++Source.Tmux {
++  function mobileState() { return JSON.stringify({opened: opened, configured: host !== "", connected: connected}) }
++  settings: ({"host": "", "refreshIntervalSec": 60})
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/andreconde.tmux/Tmux.qml
++++ b/andreconde.tmux/Tmux.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Controls
+ import Quickshell
+@@ -109,6 +110,7 @@
+   ]
+ 
+   function refresh() {
++    if (host.trim() === "") return
+     if (!pollProc.running) pollProc.running = true
+   }
+ 
+@@ -337,7 +339,7 @@
+   Timer {
+     id: pollTimer
+     interval: root.refreshMs
+-    running: true
++    running: root.opened && root.host.trim() !== ""
+     repeat: true
+     triggeredOnStart: true
+     onTriggered: root.refresh()
+@@ -400,6 +402,8 @@
+   // ---------------------------------------------------------------- panel
+ 
+   KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-andreconde.tmux"
++    screen: Quickshell.screens[0]
+     id: panel
+     anchorItem: button
+     owner: root
+--- a/andreconde.tmux/manifest.json
++++ b/andreconde.tmux/manifest.json
+@@ -3,18 +3,23 @@
+   "id": "andreconde.tmux",
+   "name": "Remote tmux",
+   "version": "1.1.0",
+-  "author": "André Conde",
++  "author": "Andr\u00e9 Conde",
+   "license": "MIT",
+   "description": "Remote tmux viewer for an SSH host: sessions, windows, and Claude Code agent status (waiting/working/ready) read from pane tails, in a bar panel.",
+-  "kinds": ["bar-widget"],
++  "kinds": [
++    "panel"
++  ],
+   "entryPoints": {
+-    "barWidget": "Tmux.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "Remote tmux",
+     "description": "Polls tmux on a remote host over ssh; click a window to attach in a local terminal.",
+     "category": "Monitoring",
+-    "aliases": ["tmux", "remote-tmux"],
++    "aliases": [
++      "tmux",
++      "remote-tmux"
++    ],
+     "allowMultiple": false,
+     "defaults": {
+       "host": "tmux-host",
+@@ -22,9 +27,32 @@
+       "recentMinutes": 10
+     },
+     "schema": [
+-      { "key": "host", "type": "string", "label": "SSH host", "defaultValue": "tmux-host", "description": "SSH host or alias from ~/.ssh/config. Polled with plain ssh (BatchMode); attach opens a terminal with ssh -t." },
+-      { "key": "refreshIntervalSec", "type": "integer", "label": "Refresh interval (seconds)", "min": 10, "max": 300, "step": 5, "defaultValue": 20 },
+-      { "key": "recentMinutes", "type": "integer", "label": "\"Done\" window (minutes)", "min": 1, "max": 120, "step": 1, "defaultValue": 10, "description": "A window sitting at a shell counts as recently finished if its last activity is within this window." }
++      {
++        "key": "host",
++        "type": "string",
++        "label": "SSH host",
++        "defaultValue": "tmux-host",
++        "description": "SSH host or alias from ~/.ssh/config. Polled with plain ssh (BatchMode); attach opens a terminal with ssh -t."
++      },
++      {
++        "key": "refreshIntervalSec",
++        "type": "integer",
++        "label": "Refresh interval (seconds)",
++        "min": 10,
++        "max": 300,
++        "step": 5,
++        "defaultValue": 20
++      },
++      {
++        "key": "recentMinutes",
++        "type": "integer",
++        "label": "\"Done\" window (minutes)",
++        "min": 1,
++        "max": 120,
++        "step": 1,
++        "defaultValue": 10,
++        "description": "A window sitting at a shell counts as recently finished if its last activity is within this window."
++      }
+     ]
+   }
+ }
+--- a/io.github.sahzudin.omassh/MobilePanel.qml
++++ b/io.github.sahzudin.omassh/MobilePanel.qml
+@@ -0,0 +1,9 @@
++import QtQuick
++import "." as Source
++
++Source.Panel {
++  function mobileState() { return JSON.stringify({opened: opened, hosts: hosts.length, errors: errors.length}) }
++  settings: ({"refreshIntervalSec": 120})
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/io.github.sahzudin.omassh/Panel.qml
++++ b/io.github.sahzudin.omassh/Panel.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Controls
+ import QtQuick.Layouts
+@@ -198,6 +199,8 @@
+   }
+ 
+   KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-io.github.sahzudin.omassh"
++    screen: Quickshell.screens[0]
+     id: panel
+     anchorItem: button
+     owner: root
+--- a/io.github.sahzudin.omassh/manifest.json
++++ b/io.github.sahzudin.omassh/manifest.json
+@@ -3,14 +3,14 @@
+   "id": "io.github.sahzudin.omassh",
+   "name": "OmaSSH",
+   "version": "0.1.0",
+-  "author": "Šahzudin Mahmić",
++  "author": "\u0160ahzudin Mahmi\u0107",
+   "license": "MIT",
+   "description": "Search SSH hosts from your OpenSSH config and connect from the Omarchy bar.",
+   "kinds": [
+-    "bar-widget"
++    "panel"
+   ],
+   "entryPoints": {
+-    "barWidget": "Panel.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "OmaSSH",
+--- a/io.github.woogy7.vitals/MobilePanel.qml
++++ b/io.github.woogy7.vitals/MobilePanel.qml
+@@ -0,0 +1,9 @@
++import QtQuick
++import "." as Source
++
++Source.Panel {
++  function mobileState() { return JSON.stringify({opened: opened, collected: !!snapshot && !!snapshot.cpu}) }
++  settings: ({"refreshSeconds": 5})
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/io.github.woogy7.vitals/Panel.qml
++++ b/io.github.woogy7.vitals/Panel.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Controls
+ import Quickshell
+@@ -449,6 +450,8 @@
+ 
+   // ---- surface -----------------------------------------------------------------
+   KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-io.github.woogy7.vitals"
++    screen: Quickshell.screens[0]
+     id: panel
+     anchorItem: root.anchorItem
+     owner: root.barIdentity
+--- a/io.github.woogy7.vitals/manifest.json
++++ b/io.github.woogy7.vitals/manifest.json
+@@ -8,10 +8,10 @@
+   "description": "A calm, tabbed system monitor: CPU, memory, disks, network, GPU, sensors and sortable processes in one Omarchy panel",
+   "homepage": "https://github.com/Woogy7/omarchy-vitals",
+   "kinds": [
+-    "bar-widget"
++    "panel"
+   ],
+   "entryPoints": {
+-    "barWidget": "BarWidget.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "Vitals",
+@@ -23,7 +23,15 @@
+       "refreshSeconds": 1
+     },
+     "schema": [
+-      { "key": "refreshSeconds", "type": "integer", "label": "Refresh interval (seconds)", "min": 1, "max": 10, "step": 1, "defaultValue": 1 }
++      {
++        "key": "refreshSeconds",
++        "type": "integer",
++        "label": "Refresh interval (seconds)",
++        "min": 1,
++        "max": 10,
++        "step": 1,
++        "defaultValue": 1
++      }
+     ]
+   }
+ }
+--- a/network-speed/MobilePanel.qml
++++ b/network-speed/MobilePanel.qml
+@@ -0,0 +1,9 @@
++import QtQuick
++import "." as Source
++
++Source.Panel {
++  function mobileState() { return JSON.stringify({opened: opened, download: downloadRate, upload: uploadRate}) }
++  settings: ({"pollIntervalMs": 5000})
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/network-speed/Panel.qml
++++ b/network-speed/Panel.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Layouts
+ import QtQuick.Controls
+@@ -164,14 +165,16 @@
+     }
+   }
+ 
+-  PopupCard {
++  KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-network-speed"
++    screen: Quickshell.screens[0]
+     id: popup
+     anchorItem: root.anchorItem
+     bar: root.bar
+     owner: root.barIdentity
+     open: root.opened
+-    contentWidth: Style.space(320)
+-    contentHeight: Style.space(620)
++    contentWidth: popup.fittedContentWidth(Style.space(320))
++    contentHeight: popup.cappedContentHeight(Style.space(620))
+ 
+     ScrollView {
+       id: scrollArea
+--- a/network-speed/manifest.json
++++ b/network-speed/manifest.json
+@@ -6,10 +6,10 @@
+   "author": "csawyer",
+   "description": "Live upload/download rate with an interface, icon, and color picker",
+   "kinds": [
+-    "bar-widget"
++    "panel"
+   ],
+   "entryPoints": {
+-    "barWidget": "BarWidget.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "Network Speed",
+--- a/nino.tailscale/MobilePanel.qml
++++ b/nino.tailscale/MobilePanel.qml
+@@ -0,0 +1,8 @@
++import QtQuick
++import "." as Source
++
++Source.Panel {
++  function mobileState() { return JSON.stringify({opened: opened}) }
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/nino.tailscale/Panel.qml
++++ b/nino.tailscale/Panel.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Controls
+ import QtQuick.Layouts
+@@ -257,6 +258,8 @@
+   }
+ 
+   KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-nino.tailscale"
++    screen: Quickshell.screens[0]
+     id: panel
+     anchorItem: button
+     owner: root
+--- a/nino.tailscale/manifest.json
++++ b/nino.tailscale/manifest.json
+@@ -6,9 +6,11 @@
+   "author": "OberdanSoldi",
+   "license": "MIT",
+   "description": "Tailscale status, on/off switching, login, exit nodes, machine browsing, copy actions, and Taildrop in the Omarchy bar.",
+-  "kinds": ["bar-widget"],
++  "kinds": [
++    "panel"
++  ],
+   "entryPoints": {
+-    "barWidget": "Panel.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "Tailscale",
+--- a/remco.wireguard/BarWidget.qml
++++ b/remco.wireguard/BarWidget.qml
+@@ -1,3 +1,4 @@
++import Quickshell.Wayland
+ import QtQuick
+ import QtQuick.Layouts
+ import Quickshell
+@@ -389,7 +390,9 @@
+     onPressed: root.togglePopup()
+   }
+ 
+-  PopupCard {
++  KeyboardPanel {
++    WlrLayershell.namespace: "ppp-plugin-remco.wireguard"
++    screen: Quickshell.screens[0]
+     id: popup
+     anchorItem: button
+     bar: root.bar
+@@ -424,8 +427,8 @@
+         Text {
+           id: heroIcon
+           text: root.statusText
+-          color: root.bar.foreground
+-          font.family: root.bar.fontFamily
++          color: Color.foreground
++          font.family: Style.font.family
+           font.pixelSize: Style.font.display
+           anchors.left: parent.left
+           anchors.verticalCenter: parent.verticalCenter
+@@ -436,7 +439,7 @@
+           id: heroToggle
+           visible: root.hasProfile
+           checked: root.vpnActive
+-          foreground: root.bar.foreground
++          foreground: Color.foreground
+           anchors.right: parent.right
+           anchors.verticalCenter: parent.verticalCenter
+           onToggled: root.toggleVpn()
+@@ -454,8 +457,8 @@
+           Text {
+             width: parent.width
+             text: "WireGuard"
+-            color: root.bar.foreground
+-            font.family: root.bar.fontFamily
++            color: Color.foreground
++            font.family: Style.font.family
+             font.pixelSize: Style.font.title
+             font.bold: true
+             elide: Text.ElideRight
+@@ -465,8 +468,8 @@
+           Text {
+             width: parent.width
+             text: !root.hasProfile ? "NO PROFILE" : (root.connected ? "CONNECTED" : "NOT CONNECTED")
+-            color: Qt.darker(root.bar.foreground, 1.4)
+-            font.family: root.bar.fontFamily
++            color: Qt.darker(Color.foreground, 1.4)
++            font.family: Style.font.family
+             font.pixelSize: Style.font.caption
+             font.bold: true
+             font.letterSpacing: 1.2
+@@ -487,12 +490,12 @@
+         InfoLabel { text: "Ping" }
+         DetailValue {
+           text: root.formatPing(root.pingLatencyMs)
+-          color: root.pingLossPercent > 0 ? root.bar.urgent : root.bar.foreground
++          color: root.pingLossPercent > 0 ? Color.urgent : Color.foreground
+         }
+         InfoLabel { text: "Packet Loss" }
+         DetailValue {
+           text: root.pingSamples.length > 0 ? root.pingLossPercent + "%" : "--"
+-          color: root.pingLossPercent > 0 ? root.bar.urgent : root.bar.foreground
++          color: root.pingLossPercent > 0 ? Color.urgent : Color.foreground
+         }
+ 
+         InfoLabel { text: "Receiving" }
+@@ -546,9 +549,9 @@
+           id: removeLink
+           anchors.right: parent.right
+           text: "Remove profile"
+-          color: root.bar.urgent
++          color: Color.urgent
+           opacity: removeMouse.containsMouse ? 1.0 : 0.6
+-          font.family: root.bar.fontFamily
++          font.family: Style.font.family
+           font.pixelSize: Style.font.bodySmall
+           textFormat: Text.PlainText
+ 
+@@ -566,9 +569,9 @@
+         visible: root.removeError !== ""
+         width: parent.width
+         text: root.removeError
+-        color: root.bar.urgent
++        color: Color.urgent
+         wrapMode: Text.WordWrap
+-        font.family: root.bar.fontFamily
++        font.family: Style.font.family
+         font.pixelSize: Style.font.bodySmall
+         textFormat: Text.PlainText
+       }
+@@ -585,9 +588,9 @@
+         Text {
+           width: parent.width
+           text: "Choose a WireGuard .conf file to import:"
+-          color: root.bar.foreground
++          color: Color.foreground
+           opacity: 0.8
+-          font.family: root.bar.fontFamily
++          font.family: Style.font.family
+           font.pixelSize: Style.font.bodySmall
+           wrapMode: Text.WordWrap
+           textFormat: Text.PlainText
+@@ -611,9 +614,9 @@
+             width: parent.width - autoconnectToggle.width - parent.spacing
+             anchors.verticalCenter: parent.verticalCenter
+             text: "Connect automatically at startup"
+-            color: root.bar.foreground
++            color: Color.foreground
+             opacity: 0.8
+-            font.family: root.bar.fontFamily
++            font.family: Style.font.family
+             font.pixelSize: Style.font.bodySmall
+             wrapMode: Text.WordWrap
+             textFormat: Text.PlainText
+@@ -627,7 +630,7 @@
+           Button {
+             text: ".. (up)"
+             fontSize: Style.font.bodySmall
+-            foreground: root.bar.foreground
++            foreground: Color.foreground
+             enabled: root.browseParent !== ""
+             opacity: enabled ? 1.0 : 0.4
+             onClicked: root.navigateTo(root.browseParent)
+@@ -637,9 +640,9 @@
+             width: parent.width - Style.space(90)
+             anchors.verticalCenter: parent.verticalCenter
+             text: root.browseDir
+-            color: root.bar.foreground
++            color: Color.foreground
+             opacity: 0.6
+-            font.family: root.bar.fontFamily
++            font.family: Style.font.family
+             font.pixelSize: Style.font.bodySmall
+             elide: Text.ElideMiddle
+             textFormat: Text.PlainText
+@@ -662,7 +665,7 @@
+             width: browseList.width
+             leftAlign: true
+             fontSize: Style.font.bodySmall
+-            foreground: root.bar.foreground
++            foreground: Color.foreground
+             text: entry ? root.plainText(entry.kind === "dir" ? entry.name + "/" : entry.name) : ""
+             onClicked: {
+               if (!entry) return
+@@ -676,9 +679,9 @@
+           visible: root.browseEntries.length === 0
+           width: parent.width
+           text: "No folders or .conf files found."
+-          color: root.bar.foreground
++          color: Color.foreground
+           opacity: 0.5
+-          font.family: root.bar.fontFamily
++          font.family: Style.font.family
+           font.pixelSize: Style.font.bodySmall
+           textFormat: Text.PlainText
+         }
+@@ -687,9 +690,9 @@
+           visible: root.importing
+           width: parent.width
+           text: "Importing..."
+-          color: root.bar.foreground
++          color: Color.foreground
+           opacity: 0.7
+-          font.family: root.bar.fontFamily
++          font.family: Style.font.family
+           font.pixelSize: Style.font.bodySmall
+           textFormat: Text.PlainText
+         }
+@@ -698,9 +701,9 @@
+           visible: root.importError !== ""
+           width: parent.width
+           text: root.importError
+-          color: root.bar.urgent
++          color: Color.urgent
+           wrapMode: Text.WordWrap
+-          font.family: root.bar.fontFamily
++          font.family: Style.font.family
+           font.pixelSize: Style.font.bodySmall
+           textFormat: Text.PlainText
+         }
+@@ -722,16 +725,16 @@
+   }
+ 
+   component InfoLabel: Text {
+-    color: root.bar.foreground
++    color: Color.foreground
+     opacity: 0.6
+-    font.family: root.bar.fontFamily
++    font.family: Style.font.family
+     font.pixelSize: Style.font.bodySmall
+     textFormat: Text.PlainText
+   }
+ 
+   component DetailValue: Text {
+-    color: root.bar.foreground
+-    font.family: root.bar.fontFamily
++    color: Color.foreground
++    font.family: Style.font.family
+     font.pixelSize: Style.font.bodySmall
+     Layout.fillWidth: true
+     horizontalAlignment: Text.AlignRight
+--- a/remco.wireguard/MobilePanel.qml
++++ b/remco.wireguard/MobilePanel.qml
+@@ -0,0 +1,8 @@
++import QtQuick
++import "." as Source
++
++Source.BarWidget {
++  function mobileState() { return JSON.stringify({opened: opened, configured: hasProfile, active: vpnActive}) }
++  // La barre mobile ne fournit pas le contrat des popups de bureau.
++  onBarChanged: if (bar) bar = null
++}
+--- a/remco.wireguard/manifest.json
++++ b/remco.wireguard/manifest.json
+@@ -7,10 +7,10 @@
+   "license": "MIT",
+   "description": "WireGuard VPN status icon with a details panel and .conf import",
+   "kinds": [
+-    "bar-widget"
++    "panel"
+   ],
+   "entryPoints": {
+-    "barWidget": "BarWidget.qml"
++    "panel": "MobilePanel.qml"
+   },
+   "barWidget": {
+     "displayName": "WireGuard",
