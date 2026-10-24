@@ -2,6 +2,30 @@
 
 [English overview](README.md)
 
+## État actuel — 24 octobre 2026
+
+Le téléphone démarre maintenant sur eMMC, avec interface, Wi-Fi et SSH ; la SD
+reste insérée mais non montée. Le démarrage sans carte reste à tester. Le mode
+paysage est sélectionné après démarrage avec le clavier physique officiel.
+Les modificateurs et symboles n'ont pas encore tous été testés.
+
+Le propriétaire confirme le fonctionnement des thèmes, de l'accès tactile au
+menu et du tableau des deux batteries. Six panneaux de plugins communautaires
+ont été adaptés et affichés sur le téléphone : SSH, tmux distant, débit réseau,
+Vitals, Tailscale et WireGuard. Le collecteur Vitals et le débit sont contrôlés ;
+les machines distantes et VPN restent à configurer. Battery Usage et Caffeine
+sont déposés mais désactivés. L'éditeur 4G s'ouvre, sans SIM ni test de données.
+
+Voir la [matrice de validation](CURRENT-STATUS.md), les [plugins et leurs
+versions figées](plugins/README.md) et les [outils de bureau, thèmes et
+4G](extras/README.md). Le code batterie et les adaptateurs redistribuables sont
+publiés ; les adaptations Hyprperks, qui interdisent la redistribution dans le
+sous-dossier utilisé, restent privées. Aucune sauvegarde, clé ou configuration
+personnelle n'est incluse. Le constructeur d'image complète reste absent.
+
+Les sections historiques ci-dessous décrivent aussi les étapes précédentes
+sur SD et sous Sailfish ; elles ne constituent pas l'état courant.
+
 Ce dépôt complète le prototype microSD existant. Il conserve DanctNIX, son noyau et le profil mobile, puis rétablit les accès aux outils Omarchy et prépare un premier lot d'applications graphiques ARM64. Ce n'est pas l'installateur Omarchy officiel et il ne lance pas celui-ci.
 
 ## État après installation sur le téléphone

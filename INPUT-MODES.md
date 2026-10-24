@@ -1,5 +1,10 @@
 # Deux usages : téléphone ou clavier officiel
 
+Actualisation du 24 octobre 2026 : le démarrage sur eMMC avec clavier officiel
+a sélectionné le paysage (écran et tactile transform=3). Le menu tactile a
+depuis été confirmé par le propriétaire. Les essais exhaustifs de touches et
+le hotplug restent non validés. Voir [l'état actuel](CURRENT-STATUS.md).
+
 Cette intégration conserve Hyprland et Omarchy Mobile. Elle ajoute une connexion SDDM au toucher, sans connexion automatique ni changement de mot de passe.
 
 | Situation au démarrage | Profil prévu |

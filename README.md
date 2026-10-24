@@ -12,6 +12,12 @@ This repository contains integration work tested on one device: console and keyb
 
 ## Current status
 
+Updated 2026-10-24: see the [current evidence matrix](CURRENT-STATUS.md),
+[optional community plugin panels](plugins/README.md) and
+[desktop/theme/cellular helpers](extras/README.md). Later user-level integrations
+were deployed privately first; only redistributable code and dependency locks
+are published here. Hyprperks adaptations and personal device data are excluded.
+
 | Component | Evidence / limitation |
 |---|---|
 | microSD boot and local login | Tested by the device owner |
@@ -22,16 +28,20 @@ This repository contains integration work tested on one device: console and keyb
 | Omarchy menu and app catalogue | Opened and inspected using screenshots from the device |
 | Additional applications | 203 packages installed; Chromium, Nautilus and GNOME Text Editor windows inspected |
 | Terminal complement | 37 signed packages added; software smoke tests passed in SD chroot under Sailfish; graphical session after these additions untested |
-| Keyboard / touch profiles and graphical login | Touch login confirmed on SD after session-selector fix; portrait display/touch and local session verified; automatic physical-keyboard path still untested |
+| Keyboard / touch profiles and graphical login | Touch login/typing confirmed on SD; later cold boot with official keyboard selected landscape on eMMC; exhaustive keys/symbols remain untested |
 | Touchscreen accuracy | Not fully validated |
-| Keyboard-to-phone charging | Unresolved: phone discharged while keyboard charged, under both Omarchy and Sailfish |
+| Keyboard-to-phone charging | Earlier discharge observed under both OSes; latest kernel readings show both batteries Full/100%; controlled charge cycle remains unvalidated |
 | Bluetooth and mobile data | Support retained, not validated on hardware |
 | Suspend and battery life | Not validated |
+| Themes and desktop | Tokyo Night initialized; owner confirmed theme selection; automatic Foot startup removed |
+| Touch menu and battery tables | Owner confirmed tactile menu access and the battery table |
+| Community plugins | Six adapted panels mapped on the phone; Vitals collector and network throughput checked; VPN/remote sessions unconfigured; two plugins disabled |
+| Cellular editor | Signed ARM64 editor installed and window mapped; no SIM inserted, data untested |
 | eMMC installation | Boot on eMMC confirmed, GUI/Wi-Fi/SSH working, ~94 GiB free; SD was still inserted but unmounted, so boot with card physically absent remains untested |
 
-The physical microSD is 512 GB, but the tested root partition remains approximately 8 GiB. Storage expansion is not implemented here. A 512 GB card image must not be written wholesale to the smaller eMMC.
+The recovery microSD is 512 GB with an approximately 8 GiB root partition. The current eMMC root partition is 107.6 GiB. SD storage expansion is not implemented here. A 512 GB card image must not be written wholesale to the smaller eMMC.
 
-[eMMC migration](EMMC-MIGRATION.md) reuses the existing 107.6 GiB ext4 partition, preserves Sailfish recovery files privately, and adapts boot references without formatting or repartitioning. The copy completed successfully on the device, with package checks, matching kernel/initramfs files and an unchanged partition table. Booting from eMMC without the SD remains untested; the phone still runs from SD at this checkpoint.
+[eMMC migration](EMMC-MIGRATION.md) reuses the existing 107.6 GiB ext4 partition, preserves Sailfish recovery files privately, and adapts boot references without formatting or repartitioning. The copy and subsequent eMMC boots completed successfully on the device, with package checks, matching kernel/initramfs files and an unchanged partition table. The phone runs from eMMC; booting with the SD physically removed remains untested.
 
 ## Tested software
 
@@ -105,7 +115,7 @@ The original mobile launcher and keyboard profile stay in place. The graphical X
 
 Follow the [PINE64 keyboard documentation](https://pine64.org/documentation/Phone_Accessories/Keyboard/). With the keyboard mounted, charge through its USB-C port. Do not connect charging power to both ports; unplugging the keyboard's charging cable does not disconnect its internal battery output.
 
-On the tested unit the keyboard charged while the phone continued discharging, including under Sailfish. This remains unresolved and must not be represented as a working feature. Direct phone charging was observed after the owner reported removing the keyboard. Kernel input-device registration alone does not prove physical attachment after hot removal.
+On earlier tests the keyboard charged while the phone continued discharging, including under Sailfish. The latest kernel report shows both batteries Full/100%, but the physical charging arrangement and a complete charge cycle still need confirmation. This must not be represented as a validated fix. Direct phone charging was observed after the owner reported removing the keyboard. Kernel input-device registration alone does not prove physical attachment after hot removal.
 
 ## Checks and contributions
 
@@ -114,6 +124,9 @@ python3 tests/download.py
 python3 tests/check_console.py
 python3 tests/terminal-lock.py
 python3 tests/input-modes.py
+python3 tests/power-status.py
+python3 tests/plugin-archives.py
+python3 tests/plugin-install.py
 bash tests/user-configure.sh
 bash -n install.sh configure-user.sh
 ```
