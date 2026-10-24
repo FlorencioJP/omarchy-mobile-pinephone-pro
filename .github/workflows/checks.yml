@@ -18,9 +18,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bash -n install.sh install-input-modes.sh configure-user.sh tests/user-configure.sh tests/terminal-smoke.sh tests/sddm-session.sh
+          bash -n install.sh install-input-modes.sh migrate-emmc.sh restore-sailfish.sh configure-user.sh tests/user-configure.sh tests/terminal-smoke.sh tests/sddm-session.sh
           python3 tests/download.py
           python3 tests/check_console.py
           python3 tests/terminal-lock.py
           python3 tests/input-modes.py
+          python3 tests/emmc-config.py
+          python3 tests/emmc-moves.py
           bash tests/user-configure.sh

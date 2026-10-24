@@ -27,9 +27,11 @@ This repository contains integration work tested on one device: console and keyb
 | Keyboard-to-phone charging | Unresolved: phone discharged while keyboard charged, under both Omarchy and Sailfish |
 | Bluetooth and mobile data | Support retained, not validated on hardware |
 | Suspend and battery life | Not validated |
-| eMMC installation | Not implemented or tested; existing bootloader/SPI preserved |
+| eMMC installation | Migration and recovery scripts prepared; not yet run on hardware; existing bootloader/SPI preserved |
 
 The physical microSD is 512 GB, but the tested root partition remains approximately 8 GiB. Storage expansion is not implemented here. A 512 GB card image must not be written wholesale to the smaller eMMC.
+
+[eMMC migration](EMMC-MIGRATION.md) reuses the existing 107.6 GiB ext4 partition, preserves Sailfish recovery files privately, and adapts boot references without formatting or repartitioning. The scripts have host/ARM64 configuration checks, but migration and eMMC boot are not yet validated.
 
 ## Tested software
 

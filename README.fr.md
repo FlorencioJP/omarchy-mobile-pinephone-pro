@@ -68,7 +68,7 @@ Les scripts d'installation et hooks contenus dans les nouvelles archives ont ét
 
 La microSD physique fait 512 Go, mais la partition racine actuelle ne fait que 7,9 Gio (7,7 Gio utilisables). Le premier lot tient dans l'espace disponible ; l'agrandissement de la partition reste une étape séparée, non effectuée ici. Le script d'installation ne repartitionne rien.
 
-L'utilisateur a autorisé l'installation finale sur eMMC en remplacement de Sailfish. Elle reste à préparer après les essais du lot applicatif. Il faudra relever sa capacité et son partitionnement, conserver le chargeur existant, adapter les références de racine et vérifier un démarrage sans SD. Une SD agrandie à 512 Go ne doit pas être copiée brute sur une eMMC de capacité inférieure. Aucune migration n'est exécutée par ces scripts.
+L'utilisateur a autorisé l'installation sur eMMC en remplacement de Sailfish. La [migration et son retour arrière](EMMC-MIGRATION.md) sont préparés dans `migrate-emmc.sh`, `emmc-config.py` et `restore-sailfish.sh`, sans formatage ni repartitionnement : la partition ext4 de 107,6 Gio devient la racine Omarchy et les anciens fichiers Sailfish sont conservés pour récupération. Le code et les transformations de configuration sont testés, mais la copie et le démarrage eMMC ne sont pas encore validés. Une SD agrandie à 512 Go ne doit pas être copiée brute sur une eMMC de capacité inférieure. Les installateurs de paquets et de profils n'exécutent pas cette migration.
 
 ## Validation
 
