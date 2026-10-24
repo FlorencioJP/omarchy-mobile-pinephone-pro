@@ -11,8 +11,9 @@ Rectangle {
   property bool failed: false
   property int sessionIndex: {
     for (var i = 0; i < sessionModel.rowCount(); i++) {
-      var name = String(sessionModel.data(sessionModel.index(i, 0), Qt.DisplayRole))
-      if (name === "Omarchy Mobile (PinePhone Pro)") return i
+      // SDDM 0.21 expose FileRole, pas Qt.DisplayRole.
+      var file = sessionModel.data(sessionModel.index(i, 0), Qt.UserRole + 2)
+      if (file === "/usr/share/wayland-sessions/omarchy-ppp.desktop") return i
     }
     return -1
   }

@@ -9,9 +9,13 @@ Window {
   visible: true
   property QtObject userModel: QtObject { property string lastUser: "terminal" }
   property QtObject sessionModel: QtObject {
-    function rowCount() { return 1 }
+    function rowCount() { return 2 }
     function index(row, column) { return row }
-    function data(index, role) { return "Omarchy Mobile (PinePhone Pro)" }
+    // SDDM 0.21 ne fournit pas Qt.DisplayRole ; FileRole vaut UserRole + 2.
+    function data(index, role) {
+      if (role !== Qt.UserRole + 2) return undefined
+      return index === 1 ? "/usr/share/wayland-sessions/omarchy-ppp.desktop" : "/usr/share/wayland-sessions/hyprland.desktop"
+    }
   }
   property QtObject sddm: QtObject {
     signal loginFailed()
@@ -26,7 +30,7 @@ Window {
     interval: 500
     running: true
     onTriggered: {
-      if (theme.status !== Loader.Ready || theme.item.sessionIndex !== 0) {
+      if (theme.status !== Loader.Ready || theme.item.sessionIndex !== 1) {
         console.error("GREETER_QML_FAILED")
         Qt.exit(1)
       } else {

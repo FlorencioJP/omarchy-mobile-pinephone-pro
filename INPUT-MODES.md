@@ -11,7 +11,7 @@ La console conserve ses propres rotations : 0 en portrait, 1 en paysage. Elles n
 
 La détection vérifie le nom `PinePhone Keyboard` et le chemin I2C `5-0015` des entrées sysfs. Elle est effectuée à l'ouverture du greeter et de la session. **Ce n'est pas une détection fiable du retrait à chaud** : le noyau peut garder une entrée après retrait physique. Éteindre avant de monter ou de retirer le clavier, puis redémarrer. La détection avec clavier sous le noyau DanctNIX reste à tester.
 
-Le greeter et la session disposent chacun de leur propre bus D-Bus et processus Squeekboard. Les demandes de visibilité utilisent l'interface existante `sm.puri.OSK0.SetVisible`. Le greeter fournit des champs utilisateur/mot de passe et un bouton de connexion au toucher ; SDDM garde la responsabilité de l'authentification. La sélection de session vise explicitement « Omarchy Mobile (PinePhone Pro) », pas la session Hyprland générique.
+Le greeter et la session disposent chacun de leur propre bus D-Bus et processus Squeekboard. Les demandes de visibilité utilisent l'interface existante `sm.puri.OSK0.SetVisible`. Le greeter fournit des champs utilisateur/mot de passe et un bouton de connexion au toucher ; SDDM garde la responsabilité de l'authentification. La sélection de session vise le fichier `/usr/share/wayland-sessions/omarchy-ppp.desktop` via le rôle `FileRole` de SDDM, indépendamment du libellé affiché.
 
 Dans le lanceur, « Mode téléphone — portrait et clavier tactile » et « Mode clavier — paysage » permettent une correction manuelle. `ppp-display landscape` pointe maintenant vers la transformation 3, comme le profil paysage qui a déjà été observé dans le bon sens sur cet appareil. Les raccourcis existants continuent d'appeler ce helper.
 
@@ -42,12 +42,15 @@ Les sauvegardes privées et le journal sont dans `/var/lib/omarchy-ppp/input-mod
 | Lua de la session complète et unités systemd | Vérifications Hyprland et `systemd-analyze verify` réussies en chroot |
 | Formulaire QML et sélection de session | Chargement Qt 6 réussi avec modèles simulés, moteur RHI nul |
 | Greeter SDDM en mode test | Thème chargé hors écran, sans authentification ni rendu réel |
-| Portrait au démarrage sans clavier | Détection sur sysfs hôte réussie ; affichage SD à tester |
+| Reconnaissance de session | Régression reproduite, puis corrigée et contrôlée avec le vrai modèle SDDM en chroot |
+| Greeter sans clavier physique | Démarré sur SD ; clavier tactile visible confirmé par l'utilisateur ; connexion à retester |
 | Saisie du mot de passe au toucher, clavier dans Foot | À tester après démarrage SD |
 | Paysage automatique avec clavier officiel | À tester après démarrage avec clavier monté |
 | Montage/retrait du clavier à chaud | Non pris en charge par cette détection |
 
 Les premiers essais QML avec un contexte OpenGL hors écran ont avorté dans le chroot. Avec `QSG_RHI_BACKEND=null`, le formulaire se charge et son modèle de session est reconnu ; cela ne valide aucun rendu GPU. Les essais en chroot utilisent le noyau Sailfish, pas le noyau de la SD.
+
+Le premier essai matériel du greeter affichait « Session Omarchy Mobile absente ». Le sélecteur lisait `Qt.DisplayRole`, que `SessionModel` de SDDM 0.21 ne fournit pas ; le premier modèle simulé acceptait à tort tous les rôles. Le correctif utilise `FileRole` (`Qt.UserRole + 2`) et son chemin complet. Le test simulé refuse maintenant les rôles inconnus et un second test charge le vrai modèle de SDDM. La correction est installée sur la SD ; l'authentification au démarrage reste à retester.
 
 ## Test matériel court
 
@@ -94,6 +97,9 @@ Sur le système ARM64 cible, avec un `XDG_RUNTIME_DIR` privé et valide :
 ```sh
 Hyprland --verify-config --config /usr/share/omarchy-ppp/hypr/greeter.lua
 QT_QPA_PLATFORM=offscreen QT_QUICK_BACKEND=rhi QSG_RHI_BACKEND=null /usr/lib/qt6/bin/qml tests/greeter.qml
+bash tests/sddm-session.sh
 ```
 
-Ces contrôles ne valident ni l'authentification SDDM réelle, ni les protocoles de saisie Wayland entre Squeekboard et les applications. L'architecture Wayland de SDDM et ses limites sur les méthodes de saisie sont documentées dans les [sources de SDDM 0.21.0](https://github.com/sddm/sddm/blob/v0.21.0/src/greeter/GreeterApp.cpp) ; le clavier externe est fourni par le compositeur dans cette intégration.
+`tests/sddm-session.sh` lance un greeter de test hors écran pendant trois secondes, sans saisie ni authentification ; le marqueur `SDDM_SESSION_OK` est obligatoire, un simple délai expiré n'est pas un succès. Il utilise les modèles C++ de SDDM et les fichiers de session du système cible, contrairement au premier test QML simulé.
+
+Ces contrôles ne valident ni l'authentification SDDM réelle, ni les protocoles de saisie Wayland entre Squeekboard et les applications. Les rôles sont documentés dans [SessionModel de SDDM 0.21.0](https://github.com/sddm/sddm/blob/v0.21.0/src/greeter/SessionModel.cpp), et la valeur renvoyée par `FileRole` dans [Session.cpp](https://github.com/sddm/sddm/blob/v0.21.0/src/common/Session.cpp). L'architecture Wayland de SDDM et ses limites sur les méthodes de saisie sont documentées dans les [sources du greeter](https://github.com/sddm/sddm/blob/v0.21.0/src/greeter/GreeterApp.cpp) ; le clavier externe est fourni par le compositeur dans cette intégration.

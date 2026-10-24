@@ -1,0 +1,5 @@
+[SddmGreeterTheme]
+Name=Omarchy session selection test
+MainScript=tests/sddm-greeter.qml
+Type=sddm-theme
+QtVersion=6

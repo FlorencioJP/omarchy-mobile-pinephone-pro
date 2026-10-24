@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bash -n install.sh install-input-modes.sh configure-user.sh tests/user-configure.sh tests/terminal-smoke.sh
+          bash -n install.sh install-input-modes.sh configure-user.sh tests/user-configure.sh tests/terminal-smoke.sh tests/sddm-session.sh
           python3 tests/download.py
           python3 tests/check_console.py
           python3 tests/terminal-lock.py
