@@ -9,7 +9,8 @@ commands = [
     for line in unit.read_text().splitlines()
     if line.startswith("ExecStart=-/usr/bin/sh -c ")
 ]
-assert len(commands) == 2
+assert len(commands) == 1
+assert 'ExecStart=-/usr/bin/ppp-profile --console auto' in unit.read_text()
 for command in commands:
     subprocess.run(["sh", "-n", "-c", command], check=True)
 
@@ -30,10 +31,5 @@ with tempfile.TemporaryDirectory() as temporary:
     (device / "driver").symlink_to(driver)
     subprocess.run(["sh", "-c", command], check=True)
     assert bind.read_text() == ""  # Ne pas toucher à un clavier déjà lié.
-    rotation = root / "sys/class/graphics/fbcon/rotate_all"
-    rotation.parent.mkdir(parents=True)
-    rotation.write_text("0")
-    subprocess.run(["sh", "-c", commands[1].replace("/sys/", temporary + "/sys/")], check=True)
-    assert rotation.read_text() == "1\n"
 
-print("Console : syntaxe shell et quatre cas simulés réussis.")
+print("Console : syntaxe shell et trois cas de liaison simulés réussis.")

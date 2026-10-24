@@ -1,0 +1,10 @@
+[SddmGreeterTheme]
+Name=Omarchy PinePhone Pro
+Description=Connexion Omarchy utilisable au toucher ou au clavier
+Author=Omarchy PinePhone Pro contributors
+License=MIT
+Type=sddm-theme
+MainScript=Main.qml
+Theme-Id=omarchy-ppp
+Theme-API=2.0
+QtVersion=6

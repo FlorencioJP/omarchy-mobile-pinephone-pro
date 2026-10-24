@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Omarchy Mobile (PinePhone Pro)
+Comment=Session Omarchy avec profil tactile ou clavier physique
+Exec=/usr/bin/start-omarchy-ppp
+TryExec=/usr/bin/start-omarchy-ppp
+Type=Application
+DesktopNames=Hyprland

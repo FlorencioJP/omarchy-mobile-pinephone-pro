@@ -26,6 +26,8 @@ L'amont examiné est [omacom/omarchy](https://github.com/omacom/omarchy), sous l
 
 ## Ce qui est ajouté
 
+Les [deux modes d'entrée](INPUT-MODES.md) sont maintenant implémentés et installés sur la SD : portrait avec clavier tactile sans clavier physique, paysage avec le clavier officiel, et greeter graphique SDDM avec authentification par mot de passe. Python, Lua et le chargement QML ont été contrôlés en chroot ; les essais des deux chemins au démarrage réel restent à effectuer. Le premier provisionnement entièrement tactile d'une image neuve reste bloqué.
+
 - Entrée « Menu Omarchy » dans le lanceur mobile et activation des panneaux natifs menu, thèmes, presse-papiers, emojis et agent d'authentification. Les extensions et la barre mobiles sont conservées.
 - `Ctrl+Alt+M` : menu ; `Ctrl+Alt+Tab` : applications actives ; `Ctrl+Alt+C` : presse-papiers. Après installation des applications : `Ctrl+Alt+B` navigateur, `Ctrl+Alt+F` fichiers et `Ctrl+Alt+E` éditeur.
 - Chromium, Nautilus, GNOME Text Editor, Evince, imv, mpv, LibreOffice, pavucontrol, Blueman, btop, gum, grim et wl-clipboard, avec leurs dépendances.
@@ -81,6 +83,7 @@ L'utilisateur a autorisé l'installation finale sur eMMC en remplacement de Sail
 | Téléchargement du lot | 203 archives et signatures vérifiées sur le téléphone |
 | Applications du lot | Installées ; navigateur, fenêtres de fichiers, éditeur et catalogue contrôlés par captures |
 | Complément terminal | 37 paquets installés et signés ; tests logiciels ARM64 en chroot réussis ; session graphique après ajout non testée |
+| Connexion tactile et deux profils | Implémentés et installés ; tests de logique, Lua et chargement QML réussis ; essais matériels au démarrage requis |
 | Persistance des nouveaux raccourcis | Module installé et chargé ; redémarrage encore à tester |
 | Rendu du compositeur | Pilote Panfrost identifié sur le téléphone ; aucun benchmark |
 | Tactile précis, veille et autonomie | Non validés |

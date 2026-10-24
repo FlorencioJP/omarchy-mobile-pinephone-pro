@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mode clavier — paysage
+Exec=/usr/bin/ppp-profile landscape
+Icon=input-keyboard
+Categories=Settings;
+Terminal=false

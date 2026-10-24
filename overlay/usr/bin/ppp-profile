@@ -1,0 +1,75 @@
+#!/usr/bin/python3
+# SPDX-License-Identifier: MIT
+"""Portrait tactile ou paysage PinePhone Keyboard ; détection au démarrage."""
+import argparse
+import json
+import os
+from pathlib import Path
+import subprocess
+import time
+
+TRANSFORMS = {"portrait": 0, "landscape": 3, "landscape-inverted": 1}
+
+
+def detect(root=Path("/sys/class/input")):
+    for name in root.glob("event*/device/name"):
+        try:
+            if name.read_text().strip() == "PinePhone Keyboard" and "5-0015" in name.resolve().parts:
+                return "landscape"
+        except FileNotFoundError:
+            continue
+    # La présence peut rester enregistrée après retrait à chaud : redémarrer.
+    return "portrait"
+
+
+def display_lua(monitors, mode):
+    panels = [m for m in monitors if m["name"].startswith(("DSI-", "eDP-"))]
+    if len(panels) != 1:
+        raise ValueError("Écran interne ambigu ou absent")
+    name = json.dumps(panels[0]["name"])
+    transform = TRANSFORMS[mode]
+    return (f'hl.monitor({{output={name},mode="preferred",position="auto",scale=1.5,transform={transform}}}); '
+            f'hl.config({{input={{touchdevice={{transform={transform},output={name}}}}}}})')
+
+
+def keyboard(visible):
+    subprocess.run(["gsettings", "set", "org.gnome.desktop.a11y.applications",
+                    "screen-keyboard-enabled", str(visible).lower()], check=True)
+    running = subprocess.run(["pgrep", "-u", str(os.getuid()), "-x", "squeekboard"],
+                             stdout=subprocess.DEVNULL)
+    if running.returncode:
+        state = Path(os.environ.get("XDG_STATE_HOME", str(Path.home() / ".local/state"))) / "omarchy-ppp"
+        state.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (state / "keyboard.log").open("ab") as log:
+            subprocess.Popen(["squeekboard"], stdin=subprocess.DEVNULL,
+                             stdout=log, stderr=subprocess.STDOUT, start_new_session=True)
+    for _ in range(30):
+        result = subprocess.run(["busctl", "--user", "--timeout=1s", "call", "sm.puri.OSK0",
+                                 "/sm/puri/OSK0", "sm.puri.OSK0", "SetVisible", "b", str(visible).lower()],
+                                stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+        if result.returncode == 0:
+            return
+        time.sleep(0.1)
+    raise RuntimeError("Clavier tactile indisponible : consulter ~/.local/state/omarchy-ppp/keyboard.log")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("mode", choices=["detect", "auto", *TRANSFORMS])
+    parser.add_argument("--console", action="store_true")
+    args = parser.parse_args()
+    mode = detect() if args.mode in ("detect", "auto") else args.mode
+    if args.mode == "detect":
+        print(mode)
+    elif args.console:
+        Path("/sys/class/graphics/fbcon/rotate_all").write_text(
+            str({"portrait": 0, "landscape": 1, "landscape-inverted": 3}[mode]))
+    else:
+        monitors = json.loads(subprocess.check_output(["hyprctl", "-j", "monitors"], text=True))
+        subprocess.run(["hyprctl", "eval", display_lua(monitors, mode)], check=True)
+        keyboard(mode == "portrait")
+        print("Profil : " + mode)
+
+
+if __name__ == "__main__":
+    main()

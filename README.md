@@ -22,6 +22,7 @@ This repository contains integration work tested on one device: console and keyb
 | Omarchy menu and app catalogue | Opened and inspected using screenshots from the device |
 | Additional applications | 203 packages installed; Chromium, Nautilus and GNOME Text Editor windows inspected |
 | Terminal complement | 37 signed packages added; software smoke tests passed in SD chroot under Sailfish; graphical session after these additions untested |
+| Keyboard / touch profiles and graphical login | Implemented and installed; logic, Lua and QML loading checked; both real boot paths still need device tests |
 | Touchscreen accuracy | Not fully validated |
 | Keyboard-to-phone charging | Unresolved: phone discharged while keyboard charged, under both Omarchy and Sailfish |
 | Bluetooth and mobile data | Support retained, not validated on hardware |
@@ -54,6 +55,8 @@ The original compressed experimental base was identified by SHA-256 `d54028c4eac
 - `tests/`: host-side logic checks. Passing them does not validate phone hardware.
 
 The console overlay and display patch are separate from the application installer. They were applied to the tested SD before local login was usable. The application installer alone does not provision a stock DanctNIX card.
+
+[Input modes and graphical login](INPUT-MODES.md) add portrait with Squeekboard when the official keyboard is absent, landscape when it is detected at session startup, and a touch-oriented SDDM login. On the already-provisioned SD, run `sudo bash install-input-modes.sh` after reviewing it. It preserves password authentication, the Omarchy Mobile session and existing bootloader. Detection is intended for cold boot, not live keyboard removal. A fresh image's initial password setup still requires separate provisioning; neither real boot path is yet validated with this addition.
 
 ## Additional application bundle
 
@@ -108,6 +111,7 @@ On the tested unit the keyboard charged while the phone continued discharging, i
 python3 tests/download.py
 python3 tests/check_console.py
 python3 tests/terminal-lock.py
+python3 tests/input-modes.py
 bash tests/user-configure.sh
 bash -n install.sh configure-user.sh
 ```

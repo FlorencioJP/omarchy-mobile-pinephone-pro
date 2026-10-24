@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Mode téléphone — portrait et clavier tactile
+Exec=/usr/bin/ppp-profile portrait
+Icon=input-tablet
+Categories=Settings;
+Terminal=false

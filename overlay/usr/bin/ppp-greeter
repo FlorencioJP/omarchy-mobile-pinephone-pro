@@ -1,0 +1,4 @@
+#!/bin/sh
+# SPDX-License-Identifier: MIT
+# Le clavier et le compositeur partagent un bus de session privé au greeter.
+exec dbus-run-session -- Hyprland --config /usr/share/omarchy-ppp/hypr/greeter.lua
