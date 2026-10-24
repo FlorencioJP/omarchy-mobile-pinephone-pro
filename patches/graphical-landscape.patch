@@ -1,0 +1,11 @@
+--- a/usr/share/omarchy-ppp/hypr/hyprland.lua
++++ b/usr/share/omarchy-ppp/hypr/hyprland.lua
+@@ -8,6 +8,6 @@
+ require('default.hypr.input')
+-hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 1.5, transform = 1 })
++hl.monitor({ output = '', mode = 'preferred', position = 'auto', scale = 1.5, transform = 3 })
+ hl.config({
+   input = {
+     kb_file = '/usr/share/omarchy-ppp/keyboard.xkb',
+-    touchdevice = { transform = 1 },
++    touchdevice = { transform = 3 },

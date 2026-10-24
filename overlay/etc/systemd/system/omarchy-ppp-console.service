@@ -1,0 +1,18 @@
+[Unit]
+Description=PinePhone Pro landscape console and late keyboard probe
+After=systemd-user-sessions.service systemd-vconsole-setup.service plymouth-quit.service
+Before=omarchy-ppp-firstboot.service getty@tty1.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=-/usr/bin/plymouth quit
+# Bus et adresse observés dans les journaux SD et sur le matériel sous Sailfish.
+ExecStart=-/usr/bin/sh -c 'if test -d /sys/bus/i2c/devices/5-0015 && ! test -L /sys/bus/i2c/devices/5-0015/driver; then echo 5-0015 > /sys/bus/i2c/drivers/pinephone-keyboard/bind; fi'
+ExecStart=-/usr/bin/sh -c 'echo 1 > /sys/class/graphics/fbcon/rotate_all'
+ExecStart=-/usr/bin/chvt 1
+# Les erreurs Wi-Fi restent dans le journal ; limiter seulement leur affichage.
+ExecStart=-/usr/bin/dmesg -n 3
+
+[Install]
+WantedBy=multi-user.target

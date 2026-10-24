@@ -4,3 +4,14 @@ cache/
 *.log
 *.img
 *.xz
+*.img.*
+*.iso
+*.pkg.tar.*
+**/.ssh/
+**/authorized_keys
+**/id_ed25519*
+**/id_rsa*
+*.key
+*.pem
+.env
+.env.*

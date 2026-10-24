@@ -1,0 +1,24 @@
+name: Host logic checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Check installer syntax and isolated logic
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -n install.sh configure-user.sh tests/user-configure.sh
+          python3 tests/download.py
+          python3 tests/check_console.py
+          bash tests/user-configure.sh
