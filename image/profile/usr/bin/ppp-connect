@@ -1,0 +1,9 @@
+#!/bin/bash
+# SPDX-License-Identifier: MIT
+set -euo pipefail
+host=${1:-}
+if [[ -z $host ]]; then
+  read -rp 'SSH host or configured alias: ' host
+fi
+[[ $host =~ ^[a-zA-Z0-9_][a-zA-Z0-9_.@:-]*$ ]] || { echo 'Invalid SSH host or alias' >&2; exit 1; }
+exec ssh -t -- "$host" 'tmux new-session -A -s agents'

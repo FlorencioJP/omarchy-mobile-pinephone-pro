@@ -1,6 +1,13 @@
-# Omarchy Mobile sur PinePhone Pro — complément expérimental
+# Omarchy sur PinePhone Pro — intégration expérimentale
 
 [English overview](README.md)
+
+Le [constructeur microSD](image/README.fr.md) utilise désormais une base publique
+signée et un lot de paquets verrouillé. Il s'agit d'une intégration indépendante,
+pas d'une cible officiellement prise en charge par Omarchy Mobile. Le
+[bilan de construction](image/VALIDATION.md) distingue les contrôles logiciels
+des essais matériels encore nécessaires. Le téléphone n'est pas connecté
+pendant cette nouvelle étape.
 
 ## État actuel — 24 octobre 2026
 
@@ -21,7 +28,9 @@ versions figées](plugins/README.md) et les [outils de bureau, thèmes et
 4G](extras/README.md). Le code batterie et les adaptateurs redistribuables sont
 publiés ; les adaptations Hyprperks, qui interdisent la redistribution dans le
 sous-dossier utilisé, restent privées. Aucune sauvegarde, clé ou configuration
-personnelle n'est incluse. Le constructeur d'image complète reste absent.
+personnelle n'est incluse. Le nouveau constructeur est décrit séparément dans
+[`image/`](image/README.md) ; les observations ci-dessous restent celles de
+l'installation historique.
 
 Les sections historiques ci-dessous décrivent aussi les étapes précédentes
 sur SD et sous Sailfish ; elles ne constituent pas l'état courant.

@@ -1,0 +1,50 @@
+#!/usr/bin/python3
+# SPDX-License-Identifier: MIT
+from pathlib import Path
+import subprocess
+
+if Path('/var/lib/omarchy-ppp/provisioned').exists():
+    raise SystemExit(0)
+
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+
+window = Gtk.Window(title='Omarchy on PinePhone Pro')
+window.set_default_size(360, 340)
+box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12, margin=16)
+window.add(box)
+label = Gtk.Label(label='Create the password for account “terminal”.\nAt least 8 characters. No default password.', wrap=True)
+box.pack_start(label, False, False, 0)
+entries = []
+for placeholder in ('Password', 'Repeat password'):
+    entry = Gtk.Entry(placeholder_text=placeholder, visibility=False)
+    entry.set_input_purpose(Gtk.InputPurpose.PASSWORD)
+    box.pack_start(entry, False, False, 0)
+    entries.append(entry)
+button = Gtk.Button(label='Save password')
+box.pack_start(button, False, False, 0)
+
+
+def save(_button):
+    password = entries[0].get_text()
+    if len(password) < 8 or password != entries[1].get_text():
+        label.set_text('Enter the same password twice (at least 8 characters).')
+        return
+    result = subprocess.run(['sudo', '-n', '/usr/lib/omarchy-ppp/set-password'],
+                            input=password, text=True, capture_output=True)
+    if result.returncode:
+        label.set_text('Password setup failed. Check the first-boot configuration.')
+        return
+    for entry in entries:
+        entry.set_text('')
+    label.set_text('Password saved. Future logins use account “terminal”.')
+    button.set_sensitive(False)
+    window.connect('delete-event', lambda *_: Gtk.main_quit())
+
+
+button.connect('clicked', save)
+window.connect('destroy', Gtk.main_quit)
+window.show_all()
+entries[0].grab_focus()
+Gtk.main()

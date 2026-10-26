@@ -5,6 +5,8 @@ plugins/plugins-runtime.json
 plugins/plugins-test-start.epoch
 extras/4g-packages/
 cache/
+image/out/
+image/work/
 *.log
 *.img
 *.xz

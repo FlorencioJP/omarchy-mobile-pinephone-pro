@@ -1,0 +1,13 @@
+#!/bin/bash
+# SPDX-License-Identifier: MIT
+set -euo pipefail
+[[ $EUID != 0 ]] || { echo 'Log in as terminal, not root.' >&2; exit 1; }
+export OMARCHY_PATH=/usr/share/omarchy
+export PATH="$OMARCHY_PATH/bin:$PATH"
+export XDG_CURRENT_DESKTOP=Hyprland
+export GTK_IM_MODULE=wayland QT_IM_MODULE=wayland XMODIFIERS=@im=none
+/usr/bin/ppp-setup-user
+if [[ -n ${DBUS_SESSION_BUS_ADDRESS:-} ]]; then
+  exec Hyprland --config /usr/share/omarchy-ppp/hypr/hyprland.lua
+fi
+exec dbus-run-session -- Hyprland --config /usr/share/omarchy-ppp/hypr/hyprland.lua

@@ -29,5 +29,8 @@ jobs:
           python3 tests/plugin-archives.py
           python3 tests/plugin-install.py
           python3 tests/cellular-lock.py
+          python3 tests/image-fetch.py
+          python3 tests/image-security.py
+          bash -n image/build.sh image/container.sh image/stage.sh image/profile/usr/bin/start-omarchy-ppp
           bash -n extras/install-user-hook.sh extras/install-4g.sh extras/install-desktop.sh
           bash tests/user-configure.sh

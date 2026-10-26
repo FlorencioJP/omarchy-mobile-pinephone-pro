@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "base": {
+    "url": "https://github.com/dreemurrs-embedded/Pine64-Arch/releases/download/20251224/archlinux-pinephone-pro-barebone-20251224.img.xz",
+    "sha256": "bf06204c2b380c8dd1bad3bbe90ed33ca9e6957761282242fc0771f18b716f01",
+    "size": 520273640,
+    "signature_sha256": "d5e419172eb2ab1d7fc990c73f3d1fed4f68eaecc221c35e914f2e11de96398a",
+    "signer": "F09A933C0FE0331E558CA4E166CAB7EAA45DD781",
+    "key_url": "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF09A933C0FE0331E558CA4E166CAB7EAA45DD781",
+    "key_sha256": "0331cbb2dd79881548230dc343b8d8963895a0d726a1c13e4ee016ed59bb80df",
+    "trust_source": "https://github.com/dreemurrs-embedded/Pine64-Arch/releases/tag/20251224"
+  },
+  "mobile": {
+    "url": "https://github.com/derekross/omarchy-mobile.git",
+    "commit": "b7d1080fcae756986636bb3f2ce18968decebe16",
+    "license": "MIT"
+  },
+  "omarchy_pkgs": {
+    "url": "https://github.com/omacom-io/omarchy-pkgs.git",
+    "commit": "4f08038e84a7fa7bfd86d03f3d1749b8c718dc3b"
+  },
+  "danctnix_pkgs": {
+    "url": "https://github.com/dreemurrs-embedded/danctnix-packages.git",
+    "commit": "0f7954037043ad25ddaec2ded78ce87b24084d45"
+  }
+}

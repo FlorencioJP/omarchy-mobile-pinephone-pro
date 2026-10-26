@@ -1,0 +1,19 @@
+// SPDX-License-Identifier: MIT
+xkb_keymap {
+  xkb_keycodes { include "evdev+aliases(qwerty)" };
+  xkb_types { include "complete" };
+  xkb_compatibility { include "complete" };
+  xkb_symbols {
+    include "pc+us+inet(evdev)+level3(ralt_switch)"
+    key <AE01> { type="FOUR_LEVEL", [ 1, exclam, bar, bar ] };
+    key <AE02> { type="FOUR_LEVEL", [ 2, at, backslash, backslash ] };
+    key <AE03> { type="FOUR_LEVEL", [ 3, numbersign, asciitilde, asciitilde ] };
+    key <AE04> { type="FOUR_LEVEL", [ 4, dollar, grave, grave ] };
+    key <AE05> { type="FOUR_LEVEL", [ 5, percent, braceleft, braceleft ] };
+    key <AE06> { type="FOUR_LEVEL", [ 6, asciicircum, braceright, braceright ] };
+    key <AE07> { type="FOUR_LEVEL", [ 7, ampersand, bracketleft, bracketleft ] };
+    key <AE08> { type="FOUR_LEVEL", [ 8, asterisk, bracketright, bracketright ] };
+    key <AE09> { type="FOUR_LEVEL", [ 9, parenleft, minus, underscore ] };
+    key <AE10> { type="FOUR_LEVEL", [ 0, parenright, equal, plus ] };
+  };
+};

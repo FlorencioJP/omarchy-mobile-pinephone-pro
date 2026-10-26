@@ -1,4 +1,4 @@
-# Omarchy Mobile on PinePhone Pro
+# Omarchy on the PinePhone Pro
 
 **Experimental, unofficial, microSD-first integration for the PinePhone Pro and the official PinePhone Keyboard.**
 
@@ -8,11 +8,17 @@ The goal is a small Linux terminal for SSH access to AI agents running on remote
 
 This repository contains integration work tested on one device: console and keyboard boot fixes, landscape configuration, access to the native Omarchy menu, and a version-locked ARM64 application bundle. It preserves the PinePhone Pro hardware stack rather than using Pixel boot or partitioning procedures.
 
-**This is not a complete operating-system installer.** It requires the specific experimental base described below. There is no public bootable image or complete from-source base-image builder in this repository. Do not flash these files or run them on an arbitrary Arch installation.
+**Independent experimental integration; not an officially supported Omarchy Mobile target.**
+The [microSD image builder](image/README.md) starts from a signed public base
+and a complete locked package transaction. Its hardware validation is separate
+from the historical installation below. The older application installers still
+require that specific installation; do not run them on an arbitrary Arch system.
 
 ## Current status
 
-Updated 2026-10-24: see the [current evidence matrix](CURRENT-STATUS.md),
+Updated 2026-10-26: see the [clean-image validation](image/VALIDATION.md).
+The following table records the historical installation (2026-10-24), not a
+hardware test of the new image. See also [project status](CURRENT-STATUS.md),
 [optional community plugin panels](plugins/README.md) and
 [desktop/theme/cellular helpers](extras/README.md). Later user-level integrations
 were deployed privately first; only redistributable code and dependency locks
@@ -53,10 +59,11 @@ The recovery microSD is 512 GB with an approximately 8 GiB root partition. The c
 
 The reference commit is an audit reference, not an instruction to replace the installed runtime with the current upstream branch. See [upstream.lock.json](upstream.lock.json), [the previous installed package inventory](installed-before.txt), and [the additional package lock](packages.lock.json).
 
-The original compressed experimental base was identified by SHA-256 `d54028c4eac86a225c1899f5d691f7409388962ecfa444c8cf0013c86380efc4`. It is not distributed here. Full bootstrap reproducibility remains incomplete until its build inputs and builder are published and independently replayed.
+The original compressed experimental base was identified by SHA-256 `d54028c4eac86a225c1899f5d691f7409388962ecfa444c8cf0013c86380efc4`. It is not distributed here or used as a build input. The new [builder](image/README.md) and [validation report](image/VALIDATION.md) describe a separate clean build from public inputs; successful host checks do not validate it on a PinePhone Pro.
 
 ## Repository contents
 
+- `image/`: public base and dependency locks, offline microSD builder, first-boot provisioning and recovery/test instructions.
 - `overlay/etc/systemd/system/`: late keyboard probe and landscape console preparation, with a first-boot ordering drop-in.
 - `patches/graphical-landscape.patch`: change display and touch rotation together, from transform 1 to 3.
 - `configure-user.sh`: preserve mobile shell configuration and add native Omarchy panels and a menu launcher entry.

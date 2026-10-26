@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT
+[Unit]
+Description=Initialize this device's package trust database
+ConditionPathExists=!/etc/pacman.d/gnupg/pubring.gpg
+After=local-fs.target
+Before=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/pacman-key --init
+ExecStart=/usr/bin/pacman-key --populate archlinuxarm danctnix archports omarchy
+
+[Install]
+WantedBy=multi-user.target

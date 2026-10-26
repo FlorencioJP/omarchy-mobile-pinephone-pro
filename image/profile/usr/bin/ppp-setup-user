@@ -1,0 +1,57 @@
+#!/usr/bin/python3
+# SPDX-License-Identifier: MIT
+import json
+import os
+from pathlib import Path
+import subprocess
+
+if os.geteuid() == 0:
+    raise SystemExit('Run as the desktop user')
+home = Path.home()
+config = Path(os.environ.get('XDG_CONFIG_HOME', home / '.config'))
+plugins = config / 'omarchy/plugins'
+plugins.mkdir(parents=True, exist_ok=True)
+for source in Path('/usr/share/omarchy-ppp/plugins').iterdir():
+    target = plugins / source.name
+    if not target.exists() and not target.is_symlink():
+        target.symlink_to(source)
+shell = config / 'omarchy/shell.json'
+if not shell.exists():
+    shell.write_text(json.dumps({
+        'version': 1,
+        'bar': {'id': 'omamobile.bar', 'position': 'top', 'transparent': False,
+                'clockFormat': 'HH:mm', 'showBatteryPercent': True,
+                'quickSettings': 'omamobile.quicksettings',
+                'layout': {'left': [], 'center': [], 'right': []}},
+        'plugins': [{'id': i} for i in ['omamobile.quicksettings', 'omamobile.launcher',
+                    'omamobile.switcher', 'omamobile.keyboard', 'omarchy.menu',
+                    'omarchy.image-picker', 'omarchy.clipboard', 'omarchy.emojis', 'omarchy.polkit-agent']],
+        'idle': {'screensaver': 0, 'lock': 0},
+    }, indent=2) + '\n')
+menu = config / 'omarchy/extensions/omarchy-menu.jsonc'
+menu.parent.mkdir(parents=True, exist_ok=True)
+if not menu.exists():
+    menu.write_text(json.dumps({
+        'pinephone': {'icon': '', 'label': 'PinePhone'},
+        'pinephone.batteries': {'label': 'Batteries', 'action': 'foot --hold ppp-batteries'},
+        'pinephone.network': {'label': 'Wi-Fi / 4G', 'action': 'nm-connection-editor'},
+        'pinephone.bluetooth': {'label': 'Bluetooth', 'action': 'blueman-manager'},
+        'pinephone.ssh': {'label': 'SSH / tmux', 'action': 'foot ppp-connect'},
+        'pinephone.portrait': {'label': 'Portrait', 'action': 'ppp-profile portrait'},
+        'pinephone.landscape': {'label': 'Landscape', 'action': 'ppp-profile landscape'},
+    }, indent=2) + '\n')
+foot = config / 'foot/foot.ini'
+foot.parent.mkdir(exist_ok=True)
+if not foot.exists():
+    foot.write_text('[main]\nfont=monospace:size=10\nterm=xterm-256color\ninclude=' + str(home / '.local/state/omarchy/current/theme/foot.ini') + '\n')
+ssh = home / '.ssh'
+ssh.mkdir(mode=0o700, exist_ok=True)
+example = ssh / 'config.example'
+if not example.exists():
+    example.write_text('Host agents\n    HostName HOSTNAME\n    User USERNAME\n    ServerAliveInterval 30\n    ServerAliveCountMax 3\n')
+    example.chmod(0o600)
+theme = home / '.local/state/omarchy/current/theme/colors.toml'
+if not theme.exists():
+    environment = dict(os.environ, OMARCHY_PATH='/usr/share/omarchy', OMARCHY_THEME_HEADLESS='1')
+    environment['PATH'] = '/usr/share/omarchy/bin:' + os.environ.get('PATH', '/usr/bin')
+    subprocess.run(['/usr/share/omarchy/bin/omarchy-theme-set', 'tokyo-night'], env=environment, check=True)

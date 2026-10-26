@@ -1,4 +1,13 @@
-# État vérifié au 24 octobre 2026
+# État du projet
+
+## Constructeur microSD — 26 octobre 2026
+
+Une nouvelle construction depuis une base publique signée est développée dans
+[`image/`](image/README.md). Ses [preuves et limites](image/VALIDATION.md) sont
+distinctes des observations sur le téléphone ci-dessous. Le téléphone n'est
+pas connecté ; aucun nouveau résultat matériel n'est annoncé.
+
+## Installation historique — état vérifié au 24 octobre 2026
 
 Portage expérimental sur un PinePhone Pro avec clavier officiel. Les confirmations
 du propriétaire, contrôles logiciels sur téléphone et tests de logique sont
