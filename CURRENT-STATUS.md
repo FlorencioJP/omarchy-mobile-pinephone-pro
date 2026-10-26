@@ -2,8 +2,10 @@
 
 ## Constructeur microSD — 26 octobre 2026
 
-Une nouvelle construction depuis une base publique signée est développée dans
-[`image/`](image/README.md). Ses [preuves et limites](image/VALIDATION.md) sont
+Le constructeur dans [`image/`](image/README.fr.md) part d'une base publique
+signée et installe hors ligne 578 paquets verrouillés. Deux constructions propres
+ont produit le même inventaire de 629 paquets et le même manifeste de configuration.
+Le [rapport logiciel](image/BUILD-REPORT.md) et les [limites](image/VALIDATION.md) sont
 distinctes des observations sur le téléphone ci-dessous. Le téléphone n'est
 pas connecté ; aucun nouveau résultat matériel n'est annoncé.
 
@@ -31,7 +33,7 @@ ces contrôles ne constitue une recompilation complète ni un test d'endurance.
 | Plugins | Huit instantanés figés ; six panneaux adaptés à Wayland | Six surfaces mappées ; mesures Vitals et débit réseau reçues | Gestes et fonctions détaillés à tester ; VPN non configurés |
 | Battery Usage / Caffeine | Sources déposées, désactivées | Pas de test fonctionnel | Noms BAT* incompatibles / gestion de veille à valider |
 | Veille et autonomie | Délais idle du shell à zéro ; deep exposé par le noyau | Aucun cycle suspend/reprise déclenché pendant cette étape | Réveil, verrouillage tactile, consommation et Wi-Fi après reprise non testés |
-| Image reproductible | Lots et plugins figés, helpers et tests publics | Installation privée issue de ces travaux | Pas de constructeur d'image complet ni d'image publique |
+| Image reproductible | Lots et plugins figés, helpers et tests publics | Installation privée issue de ces travaux | Au 24 octobre : pas de constructeur complet ; voir le nouveau bilan ci-dessus |
 
 ## Versions et provenance
 

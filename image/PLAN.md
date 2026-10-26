@@ -23,5 +23,7 @@ uncommitted login/keyboard-power experiments are not build inputs.
    An upstream package contribution remains experimental until that protocol
    passes; the existing documentation PR is kept separate.
 
-Current status: input recovery and build implementation in progress. No new
-boot, graphics, input, radio, charge or suspend result is claimed.
+Steps 1–4 are implemented and software-validated: two fresh constructions yielded
+identical package and configuration manifests. See [BUILD-REPORT.md](BUILD-REPORT.md).
+Step 5 is documented and awaits the disconnected phone. No new boot, graphics,
+input, radio, charge or suspend result is claimed.

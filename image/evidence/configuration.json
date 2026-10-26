@@ -1,0 +1,982 @@
+{
+  "boot/boot.txt": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "8ee908c02065dcbcc8d7b30d4a3bd99c3a5ad5560a8b3ce27febdca8add68f2c",
+    "uid": 0
+  },
+  "etc/fstab": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "c577a20b23e221aac675eafbb58e06a69a4be08557239764984d8154b9980b2a",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "08de8e0e34b8af252cf3e121606cdf7cd0296c5490b028c52ad18750504a2183",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.d/omarchy_hooks.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "1180719f367c2f3c5dbac8f650b6b6f202d1bc4ad66890654f56d081a41d1ead",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.d/omarchy_vconsole.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "29fbbcd37945472d89b1a024f575fea8725bd75ac2afedf93c4e3dd75a7b78b9",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.d/zz-pinephone-pro.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "51772b42d542c68b11833ccc677c2c0b937cbb87eea530686223e40eb0afd37a",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.pacnew": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "b12d6b1e26e42633b3053cbab472a75ac6dfdc47f01e9f8220fc6c5f848ddd11",
+    "uid": 0
+  },
+  "etc/mkinitcpio.conf.restore": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "cf4f0b48576eefd2ef5bcbcb43d4a49eab22f801b209c0525f98bc18fbb7ea22",
+    "uid": 0
+  },
+  "etc/sddm.conf.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/sddm.conf.d/10-theme.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "61ae32f59f5ae343b37c0c5f79306d0dcd8691a8ad2dd062904aaab2733a62bd",
+    "uid": 0
+  },
+  "etc/sddm.conf.d/10-wayland.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "711c05e5cfa836ff25deaf433b521d975f026bc189a3cbb6892b9822297c90b6",
+    "uid": 0
+  },
+  "etc/sddm.conf.d/90-pinephone-pro.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "c04247310adb616fc4353518dc680111f60570793e4578eba9f77f046b0d0560",
+    "uid": 0
+  },
+  "etc/sddm.conf.d/95-omarchy-ppp-firstboot.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "cc6c53c1942c3db1ab87ac11f8ac4fb5ee8dc4827c305f771442dd6190413cab",
+    "uid": 0
+  },
+  "etc/sudoers.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-dns": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "682b4fa259e09966045373448f4c6c2979aabba8f3605f9ffed15a44ff29a7b1",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-passwd-tries": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "fb2225f7f666aa730957c7dedc6cabb3532be5913c1a58b684d5b928bce2ccdb",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-ppp-firstboot": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "f59e9b6038dd27d7ab05b255305ded3c986bbf787cd8421912019294e7471107",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-ppp-wheel": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "65ae53cdc6fd4d323e8bab7796c0f743744d181897a349bccdc2e4259cf60cfc",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-theme-browser": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "b2981edf2d79674071fe747c7de23233a0c82afae24054aa37efa72065544d41",
+    "uid": 0
+  },
+  "etc/sudoers.d/omarchy-tzupdate": {
+    "gid": 0,
+    "mode": "0o440",
+    "sha256": "1165973dd928175065693584be95f6ed0ef5e2c9dfeebd9790f1f3ea94a0fe05",
+    "uid": 0
+  },
+  "etc/systemd/system": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/autovt@.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/getty@.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/bluetooth.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/bluetooth.target.wants/bluetooth.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/bluetooth.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/cups-browsed.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/cups-browsed.service.d/10-omarchy.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "06960a4f269b5f131299d1b72190e2c6732befce308b28ab0c626275ff079db2",
+    "uid": 0
+  },
+  "etc/systemd/system/dbus-org.bluez.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/bluetooth.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/dbus-org.freedesktop.ModemManager1.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/ModemManager.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/NetworkManager-dispatcher.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/dbus-org.freedesktop.timesync1.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/systemd-timesyncd.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/default.target": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/graphical.target",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/dhcpd4.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/dhcpd4.service.d/customexec.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "f9749875d3d6c78ba23786ee0ea7375be4c57022479bf83900dd4c30a76fd187",
+    "uid": 0
+  },
+  "etc/systemd/system/display-manager.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/sddm.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/docker.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/docker.service.d/no-block-boot.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "4b7c99e5e5d5ccc7498b487f694481415e448d7899f33994ee1b87f3a97cf176",
+    "uid": 0
+  },
+  "etc/systemd/system/getty.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/getty.target.wants/getty@tty1.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/getty@.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/ModemManager.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/ModemManager.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/NetworkManager.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/NetworkManager.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/dhcpd4.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/dhcpd4.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/eg25-manager.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/eg25-manager.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/omarchy-ppp-keyring.service": {
+    "gid": 0,
+    "link": "/etc/systemd/system/omarchy-ppp-keyring.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/remote-fs.target": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/remote-fs.target",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/usb-tethering.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/usb-tethering.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/multi-user.target.wants/zramswap.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/zramswap.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/network-online.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/NetworkManager-wait-online.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/omarchy-ppp-console.service": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "787ffec5f387e0d5d155b2518cc6246e53b09f69cb5a29cf8d181e881f108dc3",
+    "uid": 0
+  },
+  "etc/systemd/system/omarchy-ppp-keyring.service": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "e07d9211c7805f4c59d9447f385a30696c630457f97268a91cd94be0cc8cb099",
+    "uid": 0
+  },
+  "etc/systemd/system/plocate-updatedb.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/plocate-updatedb.service.d/ac-only.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "15a1b7ccb5857f8164ba951745c3c11ea7795f644772e1e41e30f11e05a9a716",
+    "uid": 0
+  },
+  "etc/systemd/system/sddm.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/sddm.service.d/pinephone-pro.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "81bd99f9c856042e5ffae48d0e57a834ff56a5c6a39acbd464a62d03535f1faa",
+    "uid": 0
+  },
+  "etc/systemd/system/sockets.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/sockets.target.wants/systemd-userdbd.socket": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/systemd-userdbd.socket",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/sysinit.target.wants": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/sysinit.target.wants/systemd-timesyncd.service": {
+    "gid": 0,
+    "link": "/usr/lib/systemd/system/systemd-timesyncd.service",
+    "mode": "0o777",
+    "uid": 0
+  },
+  "etc/systemd/system/user@.service.d": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "etc/systemd/system/user@.service.d/10-faster-shutdown.conf": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "1dd0343bcd5a30b8309f5eb07527da1d64f6c9a8e93d909a6ac050d926d65796",
+    "uid": 0
+  },
+  "home/terminal/.config": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.config/foot": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.config/foot/foot.ini": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "3d0f47ecd452cdc4ea173a3a0d2da1e63aea3ab70dbe68fdb306e018cf6d487f",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/extensions": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/extensions/omarchy-menu.jsonc": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "3689099146fc04f9e2b5b2335c97dcd234993714564701f24234295a0a9a2774",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins/omamobile.bar": {
+    "gid": 1000,
+    "link": "/usr/share/omarchy-ppp/plugins/omamobile.bar",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins/omamobile.keyboard": {
+    "gid": 1000,
+    "link": "/usr/share/omarchy-ppp/plugins/omamobile.keyboard",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins/omamobile.launcher": {
+    "gid": 1000,
+    "link": "/usr/share/omarchy-ppp/plugins/omamobile.launcher",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins/omamobile.quicksettings": {
+    "gid": 1000,
+    "link": "/usr/share/omarchy-ppp/plugins/omamobile.quicksettings",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/plugins/omamobile.switcher": {
+    "gid": 1000,
+    "link": "/usr/share/omarchy-ppp/plugins/omamobile.switcher",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.config/omarchy/shell.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "f6e25892c3df1ea4f75d215dc182a1fd3c7ce498c2929097ad43782e69905a73",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/background": {
+    "gid": 1000,
+    "link": "/home/terminal/.local/state/omarchy/current/theme/backgrounds/0-winding-road.jpg",
+    "mode": "0o777",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme.name": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "7901efe515a2ae9653a092a66d15a523eeab47a4bdef3faedb3bce6b4da0ff7a",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/alacritty.toml": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "1e537b83d2f87d9388c63ac06186948a8f869e3235c27d797e1e136c514020ef",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds": {
+    "gid": 1000,
+    "mode": "0o755",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/0-winding-road.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "37746404ae9a4357442e520c34ea105780232ac3d08a9f289f00156e49f37c4e",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/1-quattro.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "ffd65594b6d5e7094fc706d9b7b91e5a94713345d264a7d62302b64589be3c8f",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/2-swirl-buck.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "4a4ce5ba6c228771c89439710bfa81005791d3c4f76a62481e4d00939b702e3c",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/3-sunset-lake.png": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "06dfb9fce029ec35adb40ea3939296777c2b140d1232b5a1697b15052d575362",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/4-omakub.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "c04a61df9928f1c1b078050078648bd9d717326e5cc19fc9de6228989af01f24",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/5-oma-cityscape.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "22e1d639722b33fa6f0d3ac2733450b4bae961b481f5665cb16397bc5f714e5c",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/6-oma.jpg": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "41b8b6a175bb493e16e11c0829f9366491129520922c5c05e112e0295132bc14",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/backgrounds/omarchy.png": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "0da53b82f9700a57e759ab9b689f294a3ef7342ffc56a7d3abfe55d4e6c80f96",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/btop.theme": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "d50f107ac20c7b7484ac57ff2800e569ff42c1e100dc241f77b30dd23de6dd1a",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/chromium.theme": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "e8e4b79e0a4b70a294c2d06731071e58b6fca4973c4c5ccf0cbc3191467a44f5",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/claude.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "94a7b68a7f14cb1200835c625709a8b3c4eacfeb659a4e204b3e50b5fd526d56",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/colors.toml": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "8b5f53ba35b9305aafa72776dd56ea2029faaf29015e2e42db5e19ef698a8e0e",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/foot.ini": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "d20c424a3e0635011e683d8a379b1e3711abaf61f7d44cf9dd25409a04558667",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/ghostty.conf": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "9578113b847faf59eb4dac56557577810058c57075b6f7feb9f84d5a6e5648d0",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/gum_env.lua": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "d72a536431e2fa85ffba6845f0d44cb5ec0061ecc558b02c0bf71354126c988f",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/helix.toml": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "e30bb757448f3c1524bcde9336fdb5f96d4954f33ac0e8811315972e11cdc67f",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/hermes.yaml": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "ba1ddfe94b29eed61db6f69d5421b5b523cfbb2bf39da5cfa495191817181a26",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/hyprland-preview-share-picker.css": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "e9a3e46201b4c4d577963a1558bd94216ef03c7fc18e3507c96b3f6c6691b22d",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/hyprland.lua": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "18e6f880552b7e700f607ead44740c58008f6b8a67d3cf163bfb608999664acb",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/icons.theme": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "328fd2519268a09cbcb45b3e8393f6abcc1739b9816bdc87bd4761d9d240f026",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/keyboard.rgb": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "5647898e5842fab36ce9e6cac72266580095f0cea286fa683146da351b0a2c10",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/kitty.conf": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "85281924d97764f2b79aef9810306a569abb201dbf1d385d709a761ea5eb5efa",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/neovim.lua": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "4df3e20a042bb05ff3d9ed86ae9cac1ea8b068a0dd6922898c831f7d099315c0",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/obsidian.css": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "b02b99cfc1dbabbc4cdbe922875d24bee08c54d5d4e6f7c59b023aeafc2a0744",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/pi.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "f303fabd12d367bb8449936b1454baf45f8e36ea5221912e4bdfc0e02c3555a9",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/preview-unlock.png": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "54bd2c266a40440147cf54ab56b32c399db6decd44abb0bab68eb9e9379a6cd6",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/preview.png": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "1e2a87a2d948af1d195b0d2f03bd743d5ae72671ae8ad38825fd4c494e82d8fb",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/shell.lock.toml": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "046820cc740007b8f34db4aa9f402d6c0be46fa1040c2b07ab0aa12587283a50",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/shell.toml": {
+    "gid": 1000,
+    "mode": "0o600",
+    "sha256": "1343b48a969352eddb145e5acff00a8505d30f4f4007c4234d593b9d4b4a053b",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/t3code.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "1af226664f90eee85f7a392d046d99c648acbdc839770fd98b549b54ff075f29",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/unlock.png": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "31f7e20f9e692ca9273e132d9242db618cec64e69eb9bdc9f8955211910bef47",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/vscode-theme.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "3b671099250b6df7313653eecd851ab388a9d25e49ee343b6223ef113f2a2cf7",
+    "uid": 1000
+  },
+  "home/terminal/.local/state/omarchy/current/theme/vscode.json": {
+    "gid": 1000,
+    "mode": "0o644",
+    "sha256": "94a75f315b092f72ac684647ad20b72789b5d25a9f14885be7b87b374fb4160a",
+    "uid": 1000
+  },
+  "usr/bin/ppp-batteries": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "83f5fd833d1e1acbc8bf44d47ab65713753a4577da2ff24bcafb42cc3f03d6f5",
+    "uid": 0
+  },
+  "usr/bin/ppp-connect": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "4705f7ad4792391545d264e1897589c275fb5f78ce403cd62ad4b31c4b0ede97",
+    "uid": 0
+  },
+  "usr/bin/ppp-display": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "be5a267b204fefbd74d81ed9cbd3526b697132c30e5e722d3267c8a795f745a6",
+    "uid": 0
+  },
+  "usr/bin/ppp-greeter": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "5fbcc2517ad12d04c291ede09a9cc519ece22ebc924eff282050f590e7091cd6",
+    "uid": 0
+  },
+  "usr/bin/ppp-profile": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "1ba392aea5dc73e83c95182b0f581c00d5320c3c04f802151e0a4a71c28e35e8",
+    "uid": 0
+  },
+  "usr/bin/ppp-setup-user": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "743ffa9920864f2768f558564d98189089d8168f0da6de1a845fae0a93b71e83",
+    "uid": 0
+  },
+  "usr/bin/start-omarchy-ppp": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "40040d7d27fa47116f92b732e5959e45d428e9fc2078c03b095b3fb502026efd",
+    "uid": 0
+  },
+  "usr/lib/omarchy-ppp": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/lib/omarchy-ppp/set-password": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "abf68704f5a6ad1da8e21da199e79601511411394ba0dab10dde4450bf9e4ed4",
+    "uid": 0
+  },
+  "usr/lib/omarchy-ppp/welcome": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "f529e5eee45e6118ff5e9326f6993b9b020fc19ee5fdf1546cde2afe304df1db",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr/desktop.lua": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "d42f47b1b480c11e653f9740e7dce0dbd5f4693c970c4ffe72dac2ea323961b1",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr/device-mode.lua": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "3644ea213bd8d994c98f7281e62617e3e610c5726498fcb9c1ef3abeeeb4347e",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr/greeter.lua": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "52c96f2891d98b82070a9e8dc6ce9374e1aa74864711b7c2022f74c2cd7c6f34",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr/hyprland.lua": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "2e60b9da4ff60333396b8c08888aa4bb5329019e954693b173259e42adf786a7",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/hypr/input-modes.lua": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "abb6342aa85f07ddf984f59ed3021487827ee04d841733f07040bb1d16051f05",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/inputs.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "6d1a7ad01f05f4f97d54d6a2213f17aeff41318c175e4b501e34b556f3c35b13",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/installed-packages.txt": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "1b0a3ca763ec00c54855da6d57568f55ad5856206cdf8de30502252d50bee88f",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/keyboard.xkb": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "c8714631483b001eb8fbc5c6b911bf0e1d5cd873b46c4bdbb51e13d108eb3be4",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/packages.lock.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "1f549fb075dea6398239f5c86f8147de5590ff4afab5672d680f9f76478133e2",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.bar": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.bar/Bar.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "da63450db1cdbce0593297611d6b1c9fb49a99aae60dfadc77077b0de920c1a5",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.bar/StatusModel.js": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "60bc954700975143132233aa60bf56a77833c05cf07ec5104abdeddb31c3db5d",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.bar/manifest.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "549ab743b375a3297db01272901036d6a2177fb1a97d86ad0fd3e59ac50fb525",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.keyboard": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.keyboard/Keyboard.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "515c5b4e87c27653c80d29c5664bf97b318d3625ee4ea67e7438f5939f66f22a",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.keyboard/manifest.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "ca8eb0a8beb21e7de9617be1f0e3026f82e702489633b66f2dc21ef6817377e1",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.launcher": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.launcher/Launcher.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "691207ed3b25fa1171c63cc1b8743d4dd89f00da06fe9049ee6a29da66359098",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.launcher/LauncherModel.js": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "535a47478f085d37effbe3d586af998e72b85bb745a72ed3badb45b9d96a8024",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.launcher/manifest.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "8ed9dae8622e48b23bfb5ea52002400cb57219b0271ae09d383f49dce07012a9",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/BluetoothModel.js": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "6080b064ace02cbec167c10605e745722979c9909ec599080af8414db20dfa9c",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/BluetoothPanel.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "6356db74a65c83986bf5c3ac3fc23c0057cd3fcef5b14f9707e1b2d6e1d2e200",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/EditTile.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "efafe33627faffc0dcf3fad5b5749eb90db49094032f2849a49dd1fab1e63f27",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/GlyphButton.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "6874a7a49c8d43e6044dfa254e3ac2fa2ee460c1becf3c222907316e50823537",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/QuickSettings.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "db944640ddbcd6dfa736e3059cb2e5aa0c4ce56073fbf31868a91e1887896ff7",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/RecordPanel.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "e05be8657722bc2cf4ce8667296894638cdb1a0c80acdf03688cf0e917d789d8",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/SheetButton.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "3d3848654aae008a86c8ba69fd2afe3061868f8bdf32153ce8c97eb3b44a9f1b",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/SliderRow.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "5ab049f2c684bc824995952f40b85c84c05579a1c1681092da8143983e5a4882",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/Tile.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "c4f142a23f1cca9686ef7ff018c4922e58a333473774aae98b5470bb5e8a5cc6",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/TilesModel.js": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "8d4cf1e8c8c0f66a06be8d9ad57c1cece5d7395da6e1807be7aec5d09c6e4dad",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/WifiModel.js": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "e622e79afc3a5420300829dea663de8db4d861c6bba289b47d8815af0da4c81b",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/WifiPanel.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "d58a540b8630c78a4d07156984faf91daf1f4ba0fe4f2497cdb1b6a67b18566a",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/manifest.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "3ed9ce6e80a5c2b616e343611aba9381f90a64bcb80d4a7ca2b63ff6e61049b2",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/tile-action.sh": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "f0557a14890aaf7f1d64c349d69db3f7cc7b5e6a82e3c917b09bdb22b5aa3cf8",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.quicksettings/tile-state.sh": {
+    "gid": 0,
+    "mode": "0o755",
+    "sha256": "2eaf4828ea517908e72f2459223b0915b4d3135ec155d4ffacec92d920f67089",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.switcher": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.switcher/Switcher.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "3e425d7b9d92b844376acd879642fe85936bf771775f9abf93280bae81de3865",
+    "uid": 0
+  },
+  "usr/share/omarchy-ppp/plugins/omamobile.switcher/manifest.json": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "728db9c90ca483aa0ace4f53092130ebea197058d8fa67d902c28dcebc7ae513",
+    "uid": 0
+  },
+  "usr/share/sddm/themes/omarchy-ppp": {
+    "gid": 0,
+    "mode": "0o755",
+    "uid": 0
+  },
+  "usr/share/sddm/themes/omarchy-ppp/Main.qml": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "3532877acb1e9bd29f139e7d339607f7c45f8016645a8ac4dae6e2f37c75aec3",
+    "uid": 0
+  },
+  "usr/share/sddm/themes/omarchy-ppp/metadata.desktop": {
+    "gid": 0,
+    "mode": "0o644",
+    "sha256": "25c79f7a342a080e0503b8baef7b6100c179c4f70b7827e9df99bf6c37bbd737",
+    "uid": 0
+  }
+}
