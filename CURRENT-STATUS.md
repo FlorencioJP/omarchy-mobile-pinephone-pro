@@ -66,6 +66,20 @@ avec la configuration du téléphone, barre Quickshell, Squeekboard, fond d'écr
 présent, paysage avec clavier (`transform: 3`). Le propriétaire confirme un
 affichage normal. Non testés : son, veille, Wi-Fi après reprise.
 
+**Raccourcis `Ctrl+Alt` après la mise à jour.** `Ctrl+Alt+M` et tous les
+raccourcis qui passent par la barre (`Espace`, `Tab`, `C`, `K`) ne faisaient
+plus rien ; ceux qui lancent un programme marchaient. Le clavier envoyait bien
+les touches. `omarchy-shell` 4.5 parle à la barre par son socket avec `socat`,
+absent ici : chaque appel échouait avec « omarchy-shell is not responding ».
+`socat` figure dans `/usr/share/omarchy/install/omarchy-base.packages`, pas dans
+les dépendances du paquet `omarchy` : une mise à jour ne l'installe pas, et
+aucune migration ne l'ajoute. Installé depuis Arch Linux ARM, le menu s'ouvre de
+nouveau (confirmé par le propriétaire). Trois autres paquets de la même liste,
+signalés par les journaux de la barre, ont été ajoutés : `qt6-imageformats`
+(fond WebP de l'écran de verrouillage, « Unsupported image format »),
+`imagemagick` et `inotify-tools`. Les autres absences de cette liste semblent
+voulues pour le téléphone et n'ont pas été comblées.
+
 **À éviter.** Ne pas lancer `omarchy-channel-set` ni `omarchy-refresh-pacman`
 sur le téléphone : ils réécrivent les dépôts pour un PC. Avant un
 `omarchy update`, relire les nouvelles migrations.
