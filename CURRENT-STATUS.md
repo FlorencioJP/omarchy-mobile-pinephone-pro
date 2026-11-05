@@ -1,5 +1,75 @@
 # État du projet
 
+## Mise à jour vers Omarchy 4.5.0 — 5 novembre 2026
+
+Installation eMMC du propriétaire, mise à jour depuis Omarchy `4.0.6-1`.
+
+**Panne.** La mise à jour échouait. `/etc/pacman.conf` et
+`/etc/pacman.d/mirrorlist` avaient été remplacés par la configuration x86
+d'Omarchy : canal `rc`, `[multilib]`, miroirs `rc-mirror.omarchy.org` (aucun
+paquet `aarch64`). Les dépôts DanctNIX et Arch Linux ARM avaient disparu. La
+cause probable est un changement de canal (`omarchy-channel-set`) ; l'heure de
+modification l'indique, la commande n'a pas été observée. `pacman.conf.bak` était
+lui aussi la version x86 : la configuration d'origine était perdue.
+
+**Réparation.** Les deux fichiers ont été sauvegardés (suffixe `.x86-20261105`),
+puis remplacés par :
+
+```ini
+[danctnix]
+Server = https://p64.arikawa-hi.me/$repo/$arch/
+
+[core]
+Include = /etc/pacman.d/mirrorlist
+
+[extra]
+Include = /etc/pacman.d/mirrorlist
+
+[alarm]
+Include = /etc/pacman.d/mirrorlist
+
+[aur]
+Include = /etc/pacman.d/mirrorlist
+
+# En dernier : Omarchy ne remplace jamais la base du téléphone
+[omarchy]
+Server = https://pkgs.omarchy.org/stable/$arch
+```
+
+avec `Server = http://mirror.archlinuxarm.org/$arch/$repo` dans `mirrorlist`.
+Le crochet pacman d'Omarchy bloque une mise à jour directe ; elle a été lancée
+avec `sudo env OMARCHY_ALLOW_DIRECT_PACMAN=1 pacman -Syu`. 27 paquets : Omarchy
+`4.5.0-3`, Hyprland `0.57.1-1`. Noyau `linux-megi 6.18.57-1` et amorçage inchangés.
+
+**Initramfs.** `omarchy-settings` 4.5 installe
+`/etc/mkinitcpio.conf.d/00-omarchy-hooks.conf`. Sur la plateforme `aarch64`, il
+impose les crochets d'un PC (`encrypt`, `btrfs-overlayfs`, absent ici). Le
+prochain noyau aurait donc produit un initramfs différent. Le fichier
+`/etc/mkinitcpio.conf.d/zz-pinephone-pro-hooks.conf`, lu en dernier et hors
+paquet, reprend la ligne `HOOKS=` de `/etc/mkinitcpio.conf`. Une construction de
+test vers `/tmp` a réussi ; l'initramfs de `/boot` n'a pas été modifié.
+
+**Migrations.** 98 migrations Omarchy étaient en attente ; `omarchy-migrate` les
+lance à la connexion. Neuf ont été lancées : retrait des anciens droits sudo sans
+mot de passe, protection polkit, BBR, ARP, rechargement de NetworkManager,
+portail GNOME Keyring et trois réparations du fond d'écran. Les 89 autres ont
+été marquées faites sans être lancées : matériel absent (N1x, ASUS, Dell, DGX,
+Snapdragon, Intel), agents de code via `mise`, applications lourdes (fonds vidéo
+OWE…), modifications de la barre et des raccourcis d'Omarchy (le téléphone a sa
+propre configuration Hyprland), Limine, `usbguard`, `power-profiles-daemon`.
+Leur liste est sur le téléphone, dans
+`~/.local/state/omarchy/migrations-skipped-pinephone-20261105.txt`.
+
+**Vérifié après redémarrage.** Démarrage eMMC, aucun service système ou
+utilisateur en échec, Wi-Fi connecté, aucune migration en attente, Hyprland
+avec la configuration du téléphone, barre Quickshell, Squeekboard, fond d'écran
+présent, paysage avec clavier (`transform: 3`). Le propriétaire confirme un
+affichage normal. Non testés : son, veille, Wi-Fi après reprise.
+
+**À éviter.** Ne pas lancer `omarchy-channel-set` ni `omarchy-refresh-pacman`
+sur le téléphone : ils réécrivent les dépôts pour un PC. Avant un
+`omarchy update`, relire les nouvelles migrations.
+
 ## Constructeur microSD — 26 octobre 2026
 
 Le constructeur dans [`image/`](image/README.fr.md) part d'une base publique
